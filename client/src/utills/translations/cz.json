@@ -1,0 +1,419 @@
+{
+  "Navbar": { "1": "Kontakty", "2": "blog", "3": "Podpora" },
+  "Menu": {
+    "1": "Multimedia",
+    "2": "Navigace",
+    "3": "Displeje",
+    "4": "Diagnostika",
+    "5": "Parkování",
+    "6": "Chip Tuning",
+    "7": "Automatický výběr",
+    "8": "Jiný",
+    "9": "Kódování",
+    "10": "File service"
+  },
+  "Contacts": { "Phone": "+420 774 508 743", "Email": "info@diagnost2k.cz" },
+  "ContactsPage": {
+    "1": { "1": "Ruská federace", "2": "Petrohrad" },
+    "2": { "1": "Ruská federace", "2": "Moskva" },
+    "3": { "1": "Spojené státy americké", "2": "Kalifornie" }
+  },
+  "Footer": { "FormTitle": "Napište nám" },
+  "Form": {
+    "Choose": "Vyberte způsob komunikace",
+    "Name": "Jméno",
+    "Phone": "Telefon",
+    "Continue": "Pokračovat",
+    "Error": "Vyplňte prosím všechna pole",
+    "Service": "Služba:",
+    "Quastion": "Napište svou otázku",
+    "Send": "Odeslat",
+    "Thank": "Děkuji za zpětnou vazbu",
+    "Thank2": "Naši manažeři vás brzy kontaktují"
+  },
+  "Firstpage": {
+    "Firstscreen": {
+      "1": { "Title": "Diagnostika", "Subtitle": "", "Text": "" },
+      "2": { "Title": "Chip tuning", "Subtitle": "", "Text": "" },
+      "3": { "Title": "File service", "Subtitle": "", "Text": "" },
+      "Button": "Více"
+    }
+  },
+  "Errors": { "404": "Stránka ve vývoji" },
+  "BmwKey": {
+    "Title": "BMW klíč",
+    "About_1": {
+      "1": "Získejte klíčenku BMW předem naprogramovanou a odpovídající vašemu konkrétnímu modelu",
+      "2": "Vložte starý klíč do klíčenky nebo objednejte nový spolu s výměnou klíčenky BMW",
+      "3": "Zamkněte a odemkněte své auto na dálku otevřete kufr, aniž byste museli opustit své BMW zvuk houkačky v dálce, když je potřeba",
+      "Title": "Charakteristika"
+    },
+    "About_2": {
+      "1": "Každý model BMW je kompatibilní se samostatným klíčem BMW.",
+      "Title": "Popis"
+    },
+    "MegaKey": {
+      "1": "je vybaven dotykovým LCD displejem pro pohodlné použití. Zobrazuje stav centrálního zámku, alarmu, paliva a dalších důležitých informací. Určuje, zda jsou okna otevřená nebo zavřená. Umožňuje nastavit časovač pro ovládání klimatizace. Pracuje na vzdálenost až 985 Stop. Umožňuje zamknout / odemknout dveře, stejně jako otevřít kufr a pípnout",
+      "2": "Kontrola na vašem BMW může být mnohem jednodušší a rychlejší s ovladačem dálkového ovladače BMW. Nezáleží na tom, kde jste - sedíte v kanceláři nebo odpočíváte v obývacím pokoji - můžete zjistit, kolik paliva máte nebo zda je budík zapnutý, aniž byste opustili dům.",
+      "3": "naše náhradní klíčenka BMW má všechny funkce tradičního dálkového klíče a spoustu nových úžasných funkcí. Dotyková obrazovka LCD vám umožní sledovat informace o centrálním zámku a zjistit, zda jsou okna otevřená nebo zavřená. Zapnutím alarmu můžete také nastavit Nastavení senzorů interiéru.",
+      "4": "Tyto funkce klíčenky BMW zahrnují také informování o potřebě údržby vašeho BMW nebo o stavu osvětlení. V sekci mobilita se zobrazí ukazatel hladiny plynu a kolik kilometrů můžete jet, než se rozsvítí.",
+      "5": "nejúžasnější věc na tomto dotykovém klíči je, že můžete nastavit čas odjezdu a být si jisti, že vaše BMW bude mít perfektní teplotu, když budete muset vyrazit na cestu. Funkce klimatizace umožňuje předem připravit interiér tak, aby nebyl při startu příliš horký nebo studený.",
+      "6": "Všimněte si, že nemůžete zaparkovat auto na dálku pouze pomocí klíčenky pro zobrazení dálkového ovladače. Chcete-li tuto funkci použít, musí být vaše BMW vybaveno dálkově ovládanou parkovací funkcí.",
+      "Title": "Mega Display Bmw key"
+    }
+  },
+  "Diagnostik": {
+    "Firstscreen": {
+      "Title": "Diagnostika a adaptace",
+      "Subtitle": "Včasná diagnóza",
+      "Text": "Vám umožní udržet váš rozpočet v budoucnu."
+    },
+    "About_1": {
+      "1": "Nabízíme počítačovou diagnostiku elektronických systémů automobilů, přizpůsobení různých modulů a řídící jednotky vozidla.",
+      "2": "Nabízíme pro vás :",
+      "3": "přizpůsobení a kontrola škrticí klapky, plynového pedálu",
+      "4": "seznam základních diagnostických prací, které provádíme:",
+      "5": "1. Počítačová diagnostika elektrických zařízení vozidla.",
+      "6": "2. Čtení a resetování DTC diagnostických chybových kódů s jejich dešifrováním.",
+      "7": "3. Kontrola shody VIN čísla auto s jeho řídicí jednotkou.",
+      "8": "4. Zkontrolujte počet registrovaných klíčů v bloku imobilizéru na plný úvazek.",
+      "9": "5. Kontrola shody s měřením tachometru.",
+      "10": "6. Diagnostika a vypnutí systému kontroly integrity žárovek.",
+      "11": "7. Kontrola, resetování a aktivace systému TPMS.",
+      "12": "8. Zkontrolujte konektivitu kamery na plný úvazek a její aktivaci.",
+      "13": "9. Provádění servisních postupů při výměně akumulátoru.",
+      "14": "10. Reset servisních intervalů a provádění dalších servisních postupů.",
+      "15": "11. Přizpůsobení a kontrola škrticí klapky, plynového pedálu, pojistných událostí, okenních zvedáků, elektrických pohonů, ventilů VTEC, VVTi atd.",
+      "16": "12. Resetování a aktivace systému EGR.",
+      "17": "13. Diagnostika a adaptace (školení) automatických převodovek.",
+      "18": "14. Diagnostika a kontrola výkonových mechanismů bez demontáže vozidla.",
+      "19": "15. Diagnostika akumulátoru, stanovení zbytkové kapacity a deklarovaných vlastností",
+      "20": "16. Kontrola práce startéru, generátoru, stejně jako kvality hmoty v elektrických zařízeních auto."
+    },
+    "Catalog": {
+      "Title": "Katalog modelů",
+      "Subtitle": "pokud jste nenašli své auto v katalogu prosím kontaktujte nás telefonicky."
+    }
+  },
+  "Navigation": {
+    "Title": "Aktualizace navigace BMW",
+    "ButtonRequest": "Objednat",
+    "CatalogItem": {
+      "1": {
+        "Title": "BMW navigační aktualizace 2019/2020",
+        "Features": "Mějte své karty v aktuálním stavu, aniž by se z domu vezměte zodpovědnost za svůj čas a najít trasy na nový, pohodlnější dálnic a vysokorychlostních silnicích, přesně věděli, kde se nachází další čerpací stanice, bankomat nebo restauraci, chcete-li ušetřit palivo, výběrem z nejvíce účinné způsoby, jak se dostat do místa určení",
+        "Description": "seznam dostupných map a oblastí pro každé BMW může být jiný. Určete své vozidlo, abyste zjistili, do kterých zemí se rozšiřuje aktualizace karty BMW iDrive pro vaše konkrétní vozidlo a jaký rok / čtvrtletí se vztahuje."
+      },
+      "2": {
+        "Title": "NBT EVO ID5/ID6 Navigation System Retrofit",
+        "Features": "má obrazovku s vysokým rozlišením. Obsahuje pouze originální díly BMW, včetně hlavové jednotky NBT Evo s rozhraním ID5 nebo ID6. Poskytuje nejnovější verzi Map pro váš region. Dodává se s řadou aktivovaných multimediálních funkcí, jako je . Videa a služby v pohybu, aplikace BMW atd. umožňuje používat aplikace iPhone na nové obrazovce iDrive pomocí CarPlay",
+        "Description": "Дооснащение navigační systém NBT EVO ID5/ID6 se může skládat z různých částí v závislosti na vašem modelu BMW a jeho technických vlastností. Chcete-li zjistit přesnou cenu a funkce obsažené v aktualizaci iDrive pro vaše konkrétní vozidlo, identifikujte své vozidlo."
+      },
+      "3": {
+        "Title": "BMW CIC Navigation System Retrofit",
+        "Features": "má obrazovku s vysokým rozlišením. Obsahuje pouze originální díly BMW, včetně hlavy CIC, která byla aktualizována na nejnovější verzi Aktualizace softwaru BMW. Obsahuje nejnovější verzi Map pro váš region. Dodává se s řadou aktivovaných multimediálních funkcí, jako jsou videa a služby v pohybu a hlasové ovládání. Přidává port USB, který lze použít k aktualizaci karet nebo aktualizaci softwaru",
+        "Description": "tato modernizace navigačního systému BMW CIC obsahuje hlavovou jednotku,moduly, kabeláž a různé typy povrchových úprav. Chcete-li zjistit, které součásti iDrive jsou součástí vašeho BMW, zadejte číslo VIN. Získáte úplný popis modernizace CIC spolu s podrobnostmi o jeho funkcích."
+      },
+      "4": {
+        "Title": "Speed Limit Information for BMW",
+        "Features": "jasně ukazuje omezení rychlosti na palubní desce vašeho BMW. Kompatibilní se standardními a digitálními clustery. Zobrazený limit je konfigurovatelný pro každý úsek silnice. Omezení rychlosti a informace o poloze pocházejí z navigačních údajů BMW. Snadno aktualizujte údaje o omezení rychlosti aktualizací mapy iDrive",
+        "Description": "BMW může být provedeno s ohledem na výkon, ale je vždy zodpovědný za to, že pečlivě sleduje omezení rychlosti při jízdě. Tím, že znáte limit na každém úseku silnice, můžete si být jisti, že vždy jedete bezpečně a pomůže vám vyhnout se pokutám za překročení rychlosti."
+      },
+      "5": {
+        "Title": "NBT EVO ID4 Navigation System Retrofit",
+        "Features": "obsahuje obrazovku s vysokým rozlišením 8,8 palce. Obsahuje pouze originální díly BMW. Poskytuje nejnovější verzi Map pro váš region. Dodává se s řadou odemčených multimediálních funkcí, jako je . Video a služby v pohybu, aplikace BMW atd. funkce dotykového ovladače iDrive",
+        "Description": "Pokud jste spokojeni s iDrive BMW, ale chybí vám v rychlosti startu systému a lepší kontrast v grafice, pak upgrade navigační systém NBT Evo ID4-to je přesně to, co potřebujete!"
+      },
+      "6": {
+        "Title": "iDrive Touch Controller Retrofit",
+        "Features": "je vybaven dotykovým panelem na rukojeti ovladače BMW iDrive, pomocí kterého můžete při navigaci v systému psát písmena. Umožňuje více zaměřit se na silnici. Navrženo pro zlepšení prémiového vzhledu vašeho BMW. Poskytuje rychlou reakci na vaše doteky. Skládá se výhradně z originálních dílů BMW",
+        "Description": "pokud se snažíte o pohodlnější a bezpečnější způsob, jak používat systém BMW, pak iDrive touch controller je modifikace navržená tak, aby vyhovovala těmto potřebám."
+      },
+      "Title-features": "Charakteristika",
+      "Title-description": "Popis"
+    }
+  },
+  "Others": {
+    "Title": "Doplňkové služby",
+    "CatalogItem": {
+      "Title-features": "Charakteristika",
+      "Title-description": "Popis"
+    }
+  },
+  "Displays": {
+    "Title": "aktualizace BMW iDrive",
+    "ButtonRequest": "Objednat",
+    "CatalogItem": {
+      "1": {
+        "Title": "BMW Hybrid Instrument Cluster",
+        "Features": "obsahuje analogové senzory s LED podsvícením. Má digitální displej ve své spodní polovině. Skládá se pouze z originálních dílů BMW. Zobrazuje režimy Comfort / ECO pro / Sport / Sport+ na digitální části",
+        "Description": "Pokud jste unaveni z pohledu na rychloměr ve tmě a přemýšlet, zastaví vás za překročení rychlosti nebo ne, původní hybrid přístrojová deska BMW-to je přesně to, co potřebujete. Přechod z plně analogového na částečně digitální cluster však mění mnoho aspektů vašeho řízení."
+      },
+      "2": {
+        "Title": "6WB BMW OEM Digital Instrument Cluster",
+        "Features": "má plně digitální nastavení a několik druhů animace. Nabízí různé pohledy na tři jízdní režimy. Zaměřuje se na snímače tachometru a měřiče otáček ve sportovním režimu. Zdůrazňuje úsporný styl jízdy v režimu Eco Pro. Zobrazení vozidla v centrální části clusteru v reálném čase. Skládá se výhradně z originálních dílů BMW",
+        "Description": "6WB BMW OEM Digital Cluster je high - tech řešení pro efektivnější a funkční pomlčku. Ale vzhledem k tomu, že obsah soupravy se liší u každého vozu v závislosti na modelu a konfiguraci, cena se může lišit. Zadejte prosím číslo VIN, abyste získali přesnou nabídku a úplný popis."
+      },
+      "3": {
+        "Title": "VividScreen - iDrive Display for BMW",
+        "Features": "poskytuje dvojnásobné rozlišení obrazovky ve srovnání s displejem OEM iDrive. Zlepšuje kvalitu obrazu a kontrast pro lepší prohlížení. Má stejný design jako OEM. obrazovka iDrive pro udržení továrního vzhledu. Podporuje funkci Zrcadlení obrazovky SmartView BMW idrive pro použití aplikací iPhone na displeji palubní desky. Kompatibilita s mnoha technologickými aktualizacemi není k dispozici na stock obrazovce",
+        "Description": "Naše aktualizace displeje VividScreen iDrive-je to upgrade, připravené pro každého BMW individuálně, a to znamená, že obsah sady a některé drobné funkce se mohou lišit. Navíc každý model je kompatibilní s různým počtem doplňkových doplňků. Definujte své vozidlo a získejte úplný popis produktu pro vaše konkrétní vozidlo."
+      },
+      "Title-features": "Charakteristika",
+      "Title-description": "Popis"
+    }
+  },
+  "Parking": {
+    "Title": "zadní a přední kamery pro BMW",
+    "ButtonRequest": "Objednat",
+    "CatalogItem": {
+      "1": {
+        "Title": "BMW Rear View Camera Retrofit (OEM)",
+        "Features": "je to stejná záložní kamera BMW OEM, kterou BMW instaluje v továrně. Skládá se výhradně z autentických dílů BMW. Vytváří vysoce kvalitní obraz. Umožňuje přiblížit zařízení přívěsu tak, aby se pohodlně dostalo na správné místo. Pomáhá. Dynamické parkovací linky a. značení překážek. Prostorový kamerový systém 360 stupňů je k dispozici jako další doplněk",
+        "Description": "tato sada BMW couvací kamery (OEM) je sestavena pro každý model zvlášť na základě specifikací každého vozu BMW. Pokud se chcete dozvědět více o záložní komoře BMW pro vaše konkrétní auto, zadejte VIN."
+      },
+      "2": {
+        "Title": "Grill-Friendly Front View Camera for F30",
+        "Features": "snadno se montuje do roštu F30 bez úprav vozu. To vám pomůže vyhnout se poškrábání, zubům nebo jiným škodám na předním nárazníku vašeho BMW. Umožňuje vám vidět všechny těžko přístupné objekty a nízké překážky před Vaším vozem . Přepíše vlastní režim iDrive pomocí celoobrazovkového obrazu fotoaparátu. Vybaven širokoúhlým objektivem. Vytváří vysoce kvalitní obraz",
+        "Description": "Cena, díly a výbava této přední kamery BMW závisí na konfiguraci vašeho vozu. Je třeba zadat VIN, abychom mohli přizpůsobit vaše auto správné sestavě přední kamery BMW. Takže definujte své auto a získejte všechny potřebné informace, včetně tipů pro instalaci přední kamery DIY."
+      },
+      "3": {
+        "Title": "Front View Camera Retrofit",
+        "Features": "pomůže vám vyhnout se poškrábání, zubům nebo jiným škodám na předním nárazníku vašeho BMW. Umožňuje si všimnout jakýchkoli těžko přístupných objektů a nízkých překážek před Vaším vozem. Přepíše vlastní režim iDrive pomocí celoobrazovkového obrazu fotoaparátu. Vybaven širokoúhlým objektivem. Vytváří vysoce kvalitní obraz",
+        "Description": "chcete znát přesnou cenu dodatečného fotoaparátu BMW pro váš konkrétní model? Zadejte VIN a získáte náklady, informace o jeho dalších funkcích a kompatibilních addonech. Uvidíte také důležité detaily instalace pro přidání přední kamery do vašeho BMW a odkazy na video demo."
+      },
+      "4": {
+        "Title": "BMW PDC (Park Distance Control) Retrofit",
+        "Features": "dělá parkování snadné a bezpečné. Varuje vás před všemi těžko přístupnými místy mezi Vaším vozem a překážkami. Používá ultrazvukové senzory k určení vzdálenosti k nejbližším objektům . Skládá se výhradně z autentických dílů BMW. Umožňuje upgrade předního, zadního nebo obou nárazníků vašeho vozu",
+        "Description": "původní BMW PDC (Park Distance Control) je dodatečná montáž připravená pro každé BMW zvlášť. Vzhledem k tomu, že každé auto má svou vlastní konfiguraci, obsah soupravy a jeho cena se mohou lišit. Chcete-li získat přesné informace o vašem konkrétním vozidle, Vyplňte prosím pole VIN pro identifikaci vašeho vozidla."
+      },
+      "5": {
+        "Title": "Rear View Camera Retrofit (MMI) for BMW",
+        "Features": "přepíše vlastní displej iDrive s celoobrazovkovým obrazem fotoaparátu. Automaticky se aktivuje, když auto přejde na zadní kolo, stejně jako původní záložní kamera BMW. Umožňuje přidat zrcadlovku nebo přední kameru za nižší cenu. Vytváří vysoce kvalitní obraz . Vyznačuje se jednoduchým procesem instalace DIY. Podporuje statické nebo. Dynamické Parkovací Linky",
+        "Description": "BimmerTech sbírá každou kameru zpětného zrcátka (MMI) pro-kit BMW odděleně pro každý model, protože každý vůz BMW má různé konfigurace, a proto vyžaduje různé díly BMW. Chcete se dozvědět více o modernizaci zadní kamery pro vaše konkrétní auto? Identifikovat vaše BMW."
+      },
+      "6": {
+        "Title": "iDrive Touch Controller Retrofit",
+        "Features": "zobrazuje obrázky fotoaparátu z různých úhlů pohledu na obrazovce iDrive. Pomáhá vám při parkování a náročných dopravních situacích. Kombinuje snímky z více kamer a vytváří dokonalý přehled. Pomáhá vidět blížící se pohyb na křižovatkách nebo v místech s omezeným výhledem",
+        "Description": "Pokud jste si mysleli, že navigace po úzkých silnicích a úzkých парковочным místa, nemůže se stát chytřejší, opravdu podceňujete BMW. Surround View je perfektní kamerový systém, který bude dělat složité dopravní situace jen další každodenní rutinou."
+      },
+      "Title-features": "Charakteristika",
+      "Title-description": "Popis"
+    }
+  },
+  "Smartphone": {
+    "Title": "iPhone & Android integrace pro BMW",
+    "ButtonRequest": "Objednat",
+    "CatalogItem": {
+      "1": {
+        "Title": "CarPlay MMI Prime Retrofit for BMW",
+        "Features": "bezdrátová funkce CarPlay. Multimediální USB a nabíjecí port. Režim celé obrazovky. Jednoduché ovládání pomocí tlačítek iDrive a volantu. Automatická podpora pro Android . Integrace s předními a zpětnými kamerami. Vysoce kvalitní zvuk s ekvalizérem",
+        "Description": "CarPlay MMI Prime retrofit pro BMW konfigurovatelné pro každý model individuálně vzhledem k různé konfigurace každého vozu BMW. Pokud si chcete přečíst kompletní popis CarPlay MMI Prime a dozvědět se více o kompatibilitě CarPlay, zadejte VIN."
+      },
+      "2": {
+        "Title": "SmartView HD Flex - Android and iOS Screen Mirroring",
+        "Features": "umožňuje streamovat video z vašeho smartphonu Android nebo iPhone na obrazovku iDrive. Umožňuje používat své oblíbené karty na velkém displeji. Vyrábí vlastní síť Wi-Fi pro připojení k mobilním zařízením, takže nejsou vyžadovány žádné kabely nebo mobilní hotspoty. Poskytuje přehrávání zvuku přes Port aux vašeho BMW. Má vestavěné přijímače AirPlay a Miracast",
+        "Description": "Chcete-li získat přesnější informace o bezdrátovém displeji a streaming přenos zvuku přes SmartView HD Flex, uveďte vaše VIN identifikace vozu. Dozvíte se o dalších vlastnostech výrobku a specifikacích instalace, stejně jako o přesné ceně výrobku. Budete také moci vidět, co je součástí aktualizace pro zrcadlení obrazovky iPhone a zařízení Android."
+      },
+      "3": {
+        "Title": "SmartView HD Apple TV4 (iPhone Screen Mirroring)",
+        "Features": "umožňuje zrcadlit obrazovku vašeho iPhone na nativní displej iDrive. Má vestavěný Apple TV4 s vlastním obchodem s aplikacemi, který umožňuje používat aplikace bez připojení telefonu . Umožňuje streamovat video z vašeho iPhone na obrazovku vozidla . Poskytuje streamování zvuku přes Port aux vašeho BMW. Bezdrátové připojení libovolného zařízení iOS k počítači . Systém BMW iDrive .Má vstup HDMI, který poskytuje vysokou kvalitu obrazu",
+        "Description": "toto je obecný popis zařízení pro zrcadlení obrazovky SmartView Apple HD TV4. Chcete-li číst informace o konkrétním modelu produktu, zadejte VIN a identifikujte své BMW. Produktová stránka bude obsahovat přesnou cenu, informace o instalaci a aktualizacích, které mohou být přidány k objednávce za nižší cenu spolu s SmartView."
+      },
+      "4": {
+        "Title": "SmartView HD Apple TV3 (iPhone Screen Mirroring)",
+        "Features": "umožňuje streamovat video z vašeho iPhone na obrazovku iDrive. Poskytuje streamování zvuku přes Port aux vašeho BMW. Bezdrátové připojení k libovolnému zařízení iOS . Obsahuje originální jednotku Apple TV upravenou pro práci se systémem BMW iDrive. Umožňuje používat vlastní aplikace Apple TV3 bez připojení telefonu . Má vstup HDMI, který poskytuje vysokou kvalitu obrazu",
+        "Description": "cena a výbava zařízení SmartView Apple TV3 screen sdílení retrofit závisí na konfiguraci každého vozu BMW. Tímto způsobem definujte své vozidlo, abyste získali informace o přesné ceně, seznamu dílů BMW v sadě a podrobnostech instalace zařízení zrcadlení obrazovky."
+      },
+      "5": {
+        "Title": "Android Auto MMI Prime Retrofit for BMW",
+        "Features": "připojení USB pro Android Auto a zrcadlení obrazovky Android. USB port pro multimédia. Režim celé obrazovky. Jednoduché ovládání pomocí tlačítek iDrive a volantu. Podpora CarPlay pro iPhone. Integrace s předními a zpětnými kamerami. Vysoce kvalitní zvuk s ekvalizérem",
+        "Description": "kompatibilita a cena BMW Android Auto MMI Prime se může lišit podle modelu vašeho vozu a roku vydání. Prosím, identifikujte své vozidlo a získejte více informací o systému Android Auto a jak jej nainstalovat."
+      },
+      "6": {
+        "Title": "BMW Apple CarPlay Activation",
+        "Features": "umožňuje bezpečně používat aplikace iPhone na domovské obrazovce iDrive. Používá tovární mikrofon vašeho vozu, aby Siri mohl slyšet hlasové příkazy. Připojí váš iPhone k bezdrátové síti. Systém BMW iDrive. Poskytuje přehrávání zvuku prostřednictvím stereofonního systému BMW. Umožňuje snadné přepínání mezi CarPlay a standardním rozhraním vašeho vozu pomocí ovladače iDrive",
+        "Description": "Typ aktivace Apple CarPlay (přes USB nebo během relace vzdáleného kódování) závisí silně na konfiguraci vašeho BMW. Pokud zadáte svůj VIN, získáte podrobný popis nastavení BMW CarPlay v autě, stejně jako informace o tom, zda je vaše BMW kompatibilní s možností celé obrazovky."
+      },
+      "7": {
+        "Title": "BMW Enhanced Bluetooth / USB Activation",
+        "Features": "rozšiřuje multimediální schopnosti vašeho BMW. Umožňuje streamovat zvuk ze smartphonu nebo MP3 přehrávače přes port Bluetooth / USB. Umožňuje spárovat více zařízení přes Bluetooth. Poskytuje přístup pouze ke čtení SMS zpráv, e-mailů, připomínek atd.. Poskytuje přehrávání zvuku USB prostřednictvím stereofonního systému BMW. Umožňuje používat hlasové ovládání pro volání, aniž byste museli odtrhnout ruce od volantu",
+        "Description": "cena a typ BMW Enhanced Bluetooth Update / USB port Activation jsou silně závislé na konfiguraci vašeho vozu. Chcete-li zjistit, jak zapneme rozšířený port Bluetooth a USB ve vašem konkrétním vozidle (přes USB nebo během relace vzdáleného kódování), identifikujte prosím BMW/MINI."
+      },
+      "8": {
+        "Title": "AUX Port",
+        "Features": "umožňuje připojit téměř jakékoliv audio zařízení. Umožňuje poslouchat hudbu prostřednictvím stereo systému BMW. Poskytuje snadnou a rychlou instalaci. Snadno se integruje do interiéru vašeho vozu. Obsahuje pouze originální díly BMW",
+        "Description": "pokud vaše vozidlo není dodáváno s továrním aux portem, už to není problém. Můžete si ji objednat v několika málo kliknutí a nastavit ve snu (Ano, Je to tak jednoduché)."
+      },
+      "9": {
+        "Title": "Alpha One BMW Speaker Upgrade",
+        "Features": "Naše audio upgrady byly navrženy zvukovými inženýry, kteří jsou opravdu nadšeni hudbou. Díky jejich odborné znalosti v oblasti zvuku a naší lásce k BMW jsme vytvořili mini zvukové studio, které se vejde do vašeho BMW.",
+        "Description": "Díky snadné instalaci ochranné známky společnosti BimmerTech a žádoucímu umístění v kufru pro zesilovač nejsou žádné řezy a žádné vizuální změny na palubní desce nebo kabině. Pokud jste v kutilství, budete mít nainstalovaný prémiový zvukový systém a reproduktory Alpha One BMW za pár hodin. Většinu času je třeba odstranit a vyměnit trim, protože samotný zesilovač a reproduktory jsou skutečně zapojeny a přehrávány."
+      },
+      "Title-features": "Charakteristika",
+      "Title-description": "Popis"
+    }
+  },
+  "Tuning": {
+    "Firstscreen": {
+      "Title": "Chip tuning",
+      "Subtitle": "stage 1-3",
+      "Text": "ladění vozu lze rozdělit do několika etap. Ale než postoupíte do jedné fáze, musíte splnit předchozí."
+    },
+    "About_1": {
+      "1": "Chip tuning – optimalizace programu motoru, umožňuje zvýšit výkon vozidla a snížit spotřebu při různých rychlostech jízdy. Sériové DVS využívá zdroj maximálně 60-70% a často se jeden motor vyrábí v několika výkonových variantách, z nichž největší jsou k dispozici pouze za příplatek.",
+      "2": "Druhý stupeň zvýšení výkonu nabízí dodatečný výkon a může nést možnosti vypnutí katalyzátoru nebo filtru pevných částic.",
+      "3": "můžete ušetřit při nákupu vozu výběrem motoru s nízkým výkonem v dokumentech, a pak za 10-20% nákladů z dopravníku nainstalovat výkonnější program nebo tuning Stage2.",
+      "4": "potenciál motoru na této úrovni umožňují turbomotory a turbodieselové motory s dobrou pevností nebo deforované z továrny. Změny se přitom týkají pouze výkonového režimu, protože při průměrném tempu jízdy zůstává průměrná spotřeba na stejné úrovni."
+    },
+    "Reason": {
+      "1": "zlepšení dynamiky přetaktování",
+      "2": "zvýšení výkonu a točivého momentu",
+      "3": "zvýšení maximální rychlosti",
+      "4": "zlepšení odezvy plynového pedálu",
+      "5": "snížení spotřeby paliva",
+      "Title": "5 Důvodů, proč provést chip TUNING"
+    },
+    "Works": {
+      "1": "Při silném засорении a výstupu z akce сажевого filtru (DPF - Diesel particulate filter / FAP – Filter Additive Particulate) klesá výkon, roste spotřeba a rozsvítí se žárovka Check Engine. Výstup je dva-buď vyměnit nákladný kus, nebo odstranit filtr sazí z programu i z výfukového systému.",
+      "2": "Na autech Euro-5 / Euro-6 je nainstalován systém vstřikování močoviny, zkráceně AdBlue / SCR. Jak ukázala praxe, nejčastěji selhávají senzory kontroly vstřikování nebo samotné čerpadlo přídavného zařízení, když stroj začne počítat kilometr před plánovaným zastavením motoru.",
+      "3": "a změna těchto uzlů není tak jednoduchý a levný úkol. Nabízíme komplexní vypnutí močoviny AdBlue, kdy je možné odstranit čerpadlo a čidla z výfukového systému a zapomenout na tyto problémy.",
+      "4": "softwarové vypnutí vstřikování močoviny AbBlue / SCR se nutně spojí s povinnou mechanickou částí. Ventil EGR vrací do sběrného sacího potrubí ohřáté plyny z výfukového systému.",
+      "5": "hlavním cílem je zvýšení teploty směsi plynu při vstupu do motoru, při kterém se vytváří méně různých oxidů dusíku. V průběhu času se však ve sběrném sacím potrubí usazují částice sazí a snímače výpočtu vzduchu nebo samotný ventil mohou ztratit funkčnost. To vede k diagnostickým chybám při překládání stroje do nouzového režimu.",
+      "6": "vírové klapky sběrného sacího potrubí se podílejí na distribuci průtoku plynu pro optimální spalování směsi. Při zaklínění klapek v uzavřeném stavu dochází k nedostatečnému průchodu vstupního systému-auto více kouří a ztrácí část výkonu.",
+      "Title": "Doplňkové služby"
+    },
+    "CatalogItem": {
+      "1": {
+        "Title": "Tuning benzínového Turbo",
+        "Features": "Chip tuning benzínového Turbo turbodmychadla může přidat asi 15-30% výkonu. Turbodmychadla a moderní mechanické kompresory jsou regulovány prostřednictvím řídicí jednotky a chir tuning umožňuje uvolnit potenciál motoru a zplošťovat Turbo jámu."
+      },
+      "2": {
+        "Title": "Tuning atmosférický motor",
+        "Features": "Chip tuning atmosférického motoru dává nárůst výkonu v řádu 7-10%, že trvá na zadním sedadle, v porovnání s nárůstem odezvy plynového pedálu, pružnost motoru a trakce ve středním rozsahu otáček. Majitelé atmosférických motorů mohou také způsobit, že auto bude přijatelnější, kompenzovat ztráty při plném zatížení stroje."
+      },
+      "3": {
+        "Title": "Tuning vznětového motoru",
+        "Features": "Chip tuning vznětového motoru umožňuje získat dobrou nárůst točivého momentu již od spodní třetiny otáčkoměrem, a při klidné nebo трассовой jízdě lze snížit spotřebu až o 10-15%! Za příplatek lze v programu provést odstranění katalyzátoru, recerkulace EGR, močoviny AdBlue / SCR nebo vírových klapek sacího potrubí. "
+      },
+      "Title-features": "charakteristika",
+      "Title-description": "Popis"
+    }
+  },
+  "COding": {
+    "Title": "Kódování",
+    "ButtonRequest": "Objednat",
+    "About": {
+      "1": "Kódování BMW vám umožňuje přidávat, mazat nebo měnit možnosti vozidla. Kódování je změna nastavení elektronických řídicích jednotek. Všechna nastavení jsou původně nastavena výrobcem, takže kódování nepoškodí provoz elektroniky.",
+      "2": "Zpočátku zařízení kóduje auto pro nainstalovaný obal, pro normy zemí, v nichž je dodáván, pro standardy toxicity a klimatu zemí.",
+      "3": "Pomocí kódování můžete povolit možnosti a funkce stanovené výrobcem, které nebyly zahrnuty do vašeho balíčku kvůli marketingovým zájmům nebo kvůli normám země, pro kterou je vůz určen.",
+      "4": "Také kódování je nutné při změně konfigurace automobilu nebo při jeho dodatečné montáži."
+    },
+    "CatalogItem": {
+      "1": {
+        "Title": "aktivace BLUETOOTH",
+        "Features": "s aktivovaným BLUETOOTH a USB aktivovaným v BMW můžete:",
+        "Description": "rozsah funkcí, které jsou k dispozici po aktivaci této možnosti, závisí silně na typu vašeho smartphonu, stejně jako na konstrukci hardwaru a softwaru BMW ve Vašem vozidle.",
+        "List": [
+          "Streamování hudby z telefonu přes BLUETOOTH nebo USB",
+          "Přečtěte si textové zprávy a e-maily na obrazovce iDrive prostřednictvím mobilní kanceláře",
+          "Přístup k kalendáři, úkolům, poznámkám, připomínkám atd.",
+          "Použijte BLUETOOTH Voice Control, abyste mohli volat, aniž byste si vzali ruce za volant."
+        ]
+      },
+      "2": {
+        "Title": "dodatečná montáž AUDIO BLUETOOTH s podporou aptX",
+        "Description": "",
+        "Features": "AUDIO BLUETOOTH poskytuje audio signál vysoké kvality bez ztráty s podporou аудиокодека aptX s nízkou latencí pro poslech hudebních skladeb z vašeho smartphonu nebo tabletu.",
+        "D1": "rychle a automaticky se připojí k telefonu bez nutnosti zadání hesla. Audio signál je vysoce kvalitní bezztrátový, s podporou Audio kodeku aptX a nízkou latencí.",
+        "D2": "díky tomu je kvalita přehrávání zvuku BLUETOOTH stejná jako při přehrávání z disku CD (Compact Disc). Porovnáme-AUDIO BLUETOOTH v kvalitě zvuku zdroj zvukového signálu připojeného k AUX-IN přes kabel, pak to bude lepší, protože chybí dlouhý drát, který je zdrojem rušení, který spojuje konektor zdroje zvuku se vstupem AUX-IN.",
+        "D3": "Když vezmeme v úvahu to, že většina obyčejných dráty (s výjimkou odborných) jsou čínské ширпотребом nízké kvality, s velmi špatnými citacemi, pak zvuk trpí ještě více je vnější наводок a rušení. ",
+        "D4": "tyto vodiče se nezřídka lámou v místech častých ohybů zejména u základny konektorů. A to při tom, že vám přináší další nepříjemnosti neustále vložit jeden konektor do konektoru telefonu, a druhý do AUX-IN, že při častých připojení vede k tomu, že tyto konektory se postupně rozkládají, protože to, co ztratil kontakt následovaný потрескиванием nebo пропаданием zvuku.",
+        "D5": "funguje skvěle ve spojení se státním Bluetooth pro handsfree. Automaticky přepne na telefonní hovor. Po ukončení hovoru se automaticky přepne na přehrávání přerušeného telefonního hovoru hudební skladby. Neexistují žádné další zdroje napájení, které používají zapalovač cigaret a externí vodiče které se připojují k AUX-IN.",
+        "D6": "zařízení AUDIO BLUETOOTH je zabudováno do zvukového systému a poskytuje minimální délku stíněného drátu, aby se snížila úroveň rušení a hluku. Proces instalace trvá 30...45 minut. Poloměr stabilního propojení smartphonu s multimediálním zařízením, do kterého je zabudován AUDIO BLUETOOTH, je v průměru 5...10 metrů. V moderních telefonech je často konektor pro nabíjení telefonu a připojení sluchátek kombinován do jednoho společného.",
+        "D7": "takže pokud používáte k poslechu hudebních skladeb vodič připojený k AUX-IN, pak ztratíte možnost dobíjet telefon stejným vstupem. Pokud máte bezdrátové nabíjení, může zvýšit úroveň rušení zvukového signálu. S AUDIO BLUETOOTH můžete nabíjet telefon přes konektor telefonu a poslouchat hudební skladby současně"
+      },
+      "3": {
+        "Title": "odblokování videa v pohybu pro CCC, CIC, NBT, NBT EVO",
+        "Features": "Pokud je váš multimediální systém má zdroj přehrávání videa (DVD disk, USB disk, TV tuner, Screen Zrcadlení, Apple Carplay), která je blokována během pohybu, pak pomocí kódování můžeme odstranit toto omezení.",
+        "Description": "Kromě toho, můžeme také odemknout služeb, jako jsou Kancelářské zprávy, On-line zábava, Párování přes Bluetooth a Manuál pro použití během jízdy, pokud jsou již k dispozici ve vašem autě."
+      },
+      "4": {
+        "Title": "Aktivace Apple CarPlay",
+        "Description": "Apple CarPlay umožňuje připojit iPhone k vašemu BMW a používat aplikace iOS na závodním displej iDrive. Použijte Mapy Google nebo Waze pro navigaci, přístup k knihovně iTunes nebo odesílání textů pomocí hlasového příkazu Siri. Některé BMW jsou kompatibilní s Apple CarPlay na celou obrazovku"
+      },
+      "5": {
+        "Title": "aktivace Zrcadlení obrazovky pro Android v NBT EVO ID5 / ID6",
+        "Features": "Pro systém NBT EVO 2 (ID5/ID6) můžeme aktivovat režim zobrazení v reálném čase obsahu obrazovky (včetně přenosu zvuku) se zařízení založené na operačním systému Android. Můžete zobrazit na monitoru některou z navigačních map nainstalovaných ve vašem smartphonu, přehrávat videa z YouTube procházet korespondenci v messengerech atd."
+      },
+      "6": {
+        "Title": "Odmítnutí odpovědnosti",
+        "Features": "můžeme deaktivovat právní klauzuli, když nastartujete auto nebo jedete zpět. Abyste ji už nikdy neviděli. Dokonce i vyskakovací okno pro noční vidění! Jako zodpovědní řidiči znáte právní výhrady zpaměti."
+      },
+      "7": {
+        "Title": "rusifikace menu SSS, CIC, ENTRY, NBT, NBT EVO",
+        "Features": "Pokud je u vás chybí русификация, nebo nastavit русификация s nesprávným překladem (to se týká hlavně CCC), pak jsme také aktualizujeme a кодируем potřebné moduly русифицированной firmware s nejvíce korektní a přesné převodem"
+      },
+      "8": {
+        "Title": "Sportovní Displej",
+        "Features": "chcete vidět výkon a točivý moment vašeho BMW na obrazovce iDrive? Tato možnost je rozhodně pro vás! Zapnutím sportovního displeje najdete tato měření v nastavení iDrive."
+      },
+      "9": {
+        "Title": "vypnutí denního světla",
+        "Features": "pokud jsou vaše denní světla zapnutá ve výchozím nastavení při nastavení světla do automatického režimu, tato volba umožňuje jejich vypnutí v nabídce iDrive."
+      },
+      "10": {
+        "Title": "rozhraní nabídky ID5 / 6",
+        "Description": "výběr typu nabídky ID5, ID5_Plus_Plus nebo ID6_Light pro NBT EVO ID5/ID6. Pro systém NBT EVO ID5 / ID6 můžeme změnit zobrazení nabídky na některý z níže uvedených"
+      },
+      "12": { "Title": "Kódování BMW series E" },
+      "13": { "Title": "Kódování BMW series J" },
+      "Title-features": "Charakteristika",
+      "Title-description": "Popis"
+    }
+  },
+  "Chooser": {
+    "Title": "Služby pro vaše auto",
+    "Label": {
+      "1": "Vyberte značky:",
+      "2": "Vyberte si model:",
+      "3": "Vyber motor:"
+    },
+    "Placeholder": { "1": "Značka", "2": "Model", "3": "Motor" },
+    "Alert": "Vybrat všechny vstupy"
+  },
+  "carpage": {
+    "0": "Zvýšit výkon motoru",
+    "1": "z originálu",
+    "2": "do",
+    "3": "a zvýšení točivého momentu z",
+    "4": "do",
+    "5": "Maximální rychlost po naladění se zvýší o",
+    "6": "a spotřeba se v průměru sníží o",
+    "cool": {
+      "0": "Výkonový motor",
+      "1": "Kroutící moment",
+      "2": "Maximální rychlost"
+    },
+    "table": {
+      "0": "Power HP",
+      "1": "Výkon kW",
+      "2": "Torque Nm",
+      "3": "Maximální rychlost",
+      "4": "Město spotřeby",
+      "5": "Průměrná spotřeba",
+      "6": "Sledování spotřeby"
+    }
+  },
+  "coding": {
+    "bluetooth-activation": {
+      "0": "Aktivace BLUETOOTH",
+      "1": "S aktivovaným BLUETOOTH a USB aktivovaným v BMW můžete:",
+      "2": "Streamování hudby z telefonu přes BLUETOOTH nebo USB",
+      "3": "Přečtěte si textové zprávy a e-maily na obrazovce iDrive prostřednictvím mobilní kanceláře",
+      "4": "Přístup k kalendáři, úkolům, poznámkám, připomínkám atd.",
+      "5": "Použijte BLUETOOTH Voice Control, abyste mohli volat, aniž byste si vzali ruce za volant.",
+      "6": "Rozsah funkcí, které jsou k dispozici po aktivaci této možnosti, závisí silně na typu vašeho smartphonu, stejně jako na konstrukci hardwaru a softwaru BMW ve Vašem vozidle."
+    }
+  }
+}
