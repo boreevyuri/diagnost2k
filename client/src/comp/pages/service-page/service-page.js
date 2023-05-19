@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react';
 import arrow from './img/arrow.svg';
 import axios from 'axios';
 import $ from 'jquery';
-import { Link, Switch, Route } from 'react-router-dom';
+import { Link, Routes, Route } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import PopUpForm from '../../pop-up-form/pop-up-form';
 
@@ -127,11 +127,11 @@ const ServicePage = (props) => {
       <div className={fsName}>
         <div className='mask'>
           <div className='text-container'>
-            <Switch>
+            <Routes>
               <Route path={`/${page}`}>
                 <div className='cool-fs-title'></div>
               </Route>
-            </Switch>
+            </Routes>
           </div>
         </div>
         <div className='fader-common'></div>

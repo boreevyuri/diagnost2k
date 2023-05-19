@@ -1,6 +1,6 @@
 import React, { useEffect, useState, Fragment } from 'react';
 import axios from 'axios';
-import { Link, Redirect } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import $ from 'jquery';
 import { useTranslation } from 'react-i18next';
 import arrow from '../img/arrow.svg';
@@ -288,7 +288,7 @@ const Editor = (props) => {
         <Fragment>
           {state.redirect ? (
             <Fragment>
-              <Redirect to='/admin' />
+              <Navigate to='/admin' replace />
             </Fragment>
           ) : (
             <Fragment></Fragment>

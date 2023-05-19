@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import { Redirect, Link, Switch, Route } from 'react-router-dom';
+import { Navigate, Link, Routes, Route } from 'react-router-dom';
 import DashboardNav from './dashboard-nav';
 import DashboardContent from './dashboard-content';
 import axios from 'axios';
@@ -54,7 +54,7 @@ const Dashboard = () => {
           <Fragment></Fragment>
         ) : (
           <Fragment>
-            <Redirect to={state.redirect} />
+            <Navigate to={state.redirect} replace />
           </Fragment>
         )}
       </Fragment>

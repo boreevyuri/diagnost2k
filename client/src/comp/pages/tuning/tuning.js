@@ -2,7 +2,7 @@ import React, { useState, Fragment } from 'react';
 import Footer from '../../footer/footer';
 import { useTranslation } from 'react-i18next';
 import $ from 'jquery';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import TuningPage from './pages/tuning-page';
 import CatalogItem from './pages/catalog-item.js';
 import PopUpForm from '../../pop-up-form/pop-up-form';
@@ -46,7 +46,7 @@ const Tuning = () => {
             <Fragment></Fragment>
           ) : (
             <Fragment>
-              <Redirect to={state.redirect} />
+              <Navigate to={state.redirect} replace />
             </Fragment>
           )}
         </Fragment>
@@ -63,7 +63,7 @@ const Tuning = () => {
         </div>
         <div className='main-wrapper'>
           <section>
-            <Switch>
+            <Routes>
               <Route exact path='/tuning'>
                 <TuningPage redirect={(link) => redirect(link)} />
               </Route>
@@ -102,7 +102,7 @@ const Tuning = () => {
                   features={t('Tuning.CatalogItem.3.Features')}
                 />
               </Route>
-            </Switch>
+            </Routes>
           </section>
           <Footer />
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import PopUpForm from '../../pop-up-form/pop-up-form';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 import $ from 'jquery';
 import arrow from './img/arrow.svg';
 
@@ -21,7 +21,7 @@ const Support = () => {
       <div className={fsName}>
         <div className='mask'>
           <div className='text-container'>
-            <Switch>
+            <Routes>
               <Route exact path={`/support`}>
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
@@ -32,7 +32,7 @@ const Support = () => {
                   {t(`Navbar.3`)}
                 </div>
               </Route>
-            </Switch>
+            </Routes>
           </div>
         </div>
         <div className='fader-common'></div>

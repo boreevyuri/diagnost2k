@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import key from './img/screen-key.png';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import $ from 'jquery';
 import arrow from './img/arrow.svg';
@@ -28,7 +28,7 @@ const Bmwkey = () => {
       <div className={fsName}>
         <div className='mask'>
           <div className='text-container'>
-            <Switch>
+            <Routes>
               <Route exact path={`/bmw-key`}>
                 <div className='cool-fs-title'>
                   <Link to={`/others`}>
@@ -39,7 +39,7 @@ const Bmwkey = () => {
                   {t(`Bmwkey.Title`)}
                 </div>
               </Route>
-            </Switch>
+            </Routes>
           </div>
         </div>
         <div className='fader-common'></div>

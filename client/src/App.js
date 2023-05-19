@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-import { Route, Switch } from 'react-router-dom';
-import ScrollToTop from 'react-router-scroll-top';
-import './styles/style.css';
+import { Route, Routes } from 'react-router-dom';
+// import ScrollToTop from 'react-router-scroll-top';
+// import './styles/style.css';
+import './styles/style.sass';
 import NavBar from './comp/navbar/navbar';
 import { Provider } from 'react-redux';
 import store from './store';
@@ -50,30 +51,30 @@ const App = () => {
         <NavBar changeLanguage={changeLanguage} />
         <Menu />
         <section>
-          <Switch>
-            <Route exact path='/' component={Firstpage} />
-            <Route path='/diagnostika' component={Diagnostika} />
-            <Route path='/service/:name/:id' component={ServicePage} />
-            <Route path='/carpage/:mark/:id' component={CarPage} />
-            <Route path='/tuning' component={Tuning} />
-            <Route path='/file-service' component={Repair} />
-            <Route path='/navigation' component={Navigation} />
-            <Route path='/support' component={Support} />
-            <Route path='/coding' component={Coding} />
-            <Route path='/smartphone' component={Smartphone} />
-            <Route path='/autopick' component={AutoPick} />
-            <Route path='/contacts' component={Contacts} />
-            <Route path='/other' component={Others} />
-            <Route path='/parking' component={Parking} />
-            <Route path='/bmw-key' component={Bmwkey} />
-            <Route path='/displays' component={Display} />
-            <Route path='/blog' component={Blog} />
-            <Route path='/post/:id' component={Post} />
-            <Route path='/service/:id' component={CatalogItemPage} />
-          </Switch>
+          <Routes>
+            <Route exact path='/' element={Firstpage} />
+            <Route path='/diagnostika' element={Diagnostika} />
+            <Route path='/service/:name/:id' element={ServicePage} />
+            <Route path='/carpage/:mark/:id' element={CarPage} />
+            <Route path='/tuning' element={Tuning} />
+            <Route path='/file-service' element={Repair} />
+            <Route path='/navigation' element={Navigation} />
+            <Route path='/support' element={Support} />
+            <Route path='/coding' element={Coding} />
+            <Route path='/smartphone' element={Smartphone} />
+            <Route path='/autopick' element={AutoPick} />
+            <Route path='/contacts' element={Contacts} />
+            <Route path='/other' element={Others} />
+            <Route path='/parking' element={Parking} />
+            <Route path='/bmw-key' element={Bmwkey} />
+            <Route path='/displays' element={Display} />
+            <Route path='/blog' element={Blog} />
+            <Route path='/post/:id' element={Post} />
+            <Route path='/service/:id' element={CatalogItemPage} />
+          </Routes>
         </section>
       </div>
-      <ScrollToTop />
+      {/*<ScrollToTop />*/}
     </Provider>
   );
 };

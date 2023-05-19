@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import Footer from '../../footer/footer';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import arrow from './img/arrow.svg';
 import axios from 'axios';
@@ -72,7 +72,7 @@ const Smartphone = () => {
       <div className={fsName}>
         <div className='mask'>
           <div className='text-container'>
-            <Switch>
+            <Routes>
               <Route exact path={`/smartphone`}>
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
@@ -83,7 +83,7 @@ const Smartphone = () => {
                   {t(`Smartphone.Title`)}
                 </div>
               </Route>
-            </Switch>
+            </Routes>
           </div>
         </div>
         <div className='fader-common'></div>
@@ -105,8 +105,8 @@ const Smartphone = () => {
             )}
           </Fragment>
           <section>
-            <Switch>
-              <Route exact path='/smartphone' component={Catalog} />
+            <Routes>
+              <Route exact path='/smartphone' element={Catalog} />
               <Route path='/smartphone/carplay'>
                 <CatalogItem
                   setData={setDataFromProps}
@@ -188,7 +188,7 @@ const Smartphone = () => {
                   description={t('Smartphone.CatalogItem.9.Description')}
                 />
               </Route>
-            </Switch>
+            </Routes>
           </section>
           <Footer />
         </div>

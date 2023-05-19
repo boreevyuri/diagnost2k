@@ -1,6 +1,6 @@
 import React, { useState, Fragment, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 import arrow from './img/arrow.svg';
 import axios from 'axios';
 
@@ -59,7 +59,7 @@ const Blog = () => {
       <div className={fsName}>
         <div className='mask'>
           <div className='text-container'>
-            <Switch>
+            <Routes>
               <Route exact path={`/blog`}>
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
@@ -70,7 +70,7 @@ const Blog = () => {
                   {t(`Navbar.2`)}
                 </div>
               </Route>
-            </Switch>
+            </Routes>
           </div>
         </div>
         <div className='fader-common'></div>

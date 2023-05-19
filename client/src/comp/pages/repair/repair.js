@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 import arrow from './img/arrow.svg';
 
 const Repair = () => {
@@ -14,7 +14,7 @@ const Repair = () => {
       <div className={fsName}>
         <div className='mask'>
           <div className='text-container'>
-            <Switch>
+            <Routes>
               <Route exact path={`/file-service`}>
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
@@ -25,7 +25,7 @@ const Repair = () => {
                   {t(`Menu.10`)}
                 </div>
               </Route>
-            </Switch>
+            </Routes>
           </div>
         </div>
         <div className='fader-common'></div>

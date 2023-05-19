@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import Footer from '../../footer/footer';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 import arrow from './img/arrow.svg';
@@ -66,7 +66,7 @@ const Display = () => {
       <div className={fsName}>
         <div className='mask'>
           <div className='text-container'>
-            <Switch>
+            <Routes>
               <Route exact path={`/displays`}>
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
@@ -77,7 +77,7 @@ const Display = () => {
                   {t(`Displays.Title`)}
                 </div>
               </Route>
-            </Switch>
+            </Routes>
           </div>
         </div>
         <div className='fader-common'></div>
@@ -99,7 +99,7 @@ const Display = () => {
             )}
           </Fragment>
           <section>
-            <Switch>
+            <Routes>
               <Route exact path='/displays' component={Catalog} />
               <Route path='/displays/6wa-hybrid'>
                 <CatalogItem
@@ -128,7 +128,7 @@ const Display = () => {
                   description={t('Displays.CatalogItem.3.Description')}
                 />
               </Route>
-            </Switch>
+            </Routes>
           </section>
           <Footer />
         </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import Footer from '../../footer/footer';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import arrow from './img/arrow.svg';
 import axios from 'axios';
@@ -69,7 +69,7 @@ const Parking = () => {
       <div className={fsName}>
         <div className='mask'>
           <div className='text-container'>
-            <Switch>
+            <Routes>
               <Route exact path={`/parking`}>
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
@@ -80,7 +80,7 @@ const Parking = () => {
                   {t(`Parking.Title`)}
                 </div>
               </Route>
-            </Switch>
+            </Routes>
           </div>
         </div>
         <div className='fader-common'></div>
@@ -102,8 +102,8 @@ const Parking = () => {
             )}
           </Fragment>
           <section>
-            <Switch>
-              <Route exact path='/parking' component={Catalog} />
+            <Routes>
+              <Route exact path='/parking' element={Catalog} />
               <Route path='/parking/nav-update2020'>
                 <CatalogItem
                   setData={setDataFromProps}
@@ -158,7 +158,7 @@ const Parking = () => {
                   description={t('Parking.CatalogItem.6.Description')}
                 />
               </Route>
-            </Switch>
+            </Routes>
           </section>
           <Footer />
         </div>

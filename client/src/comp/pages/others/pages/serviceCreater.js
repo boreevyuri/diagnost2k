@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import axios from 'axios';
-import { Link, Redirect } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import $ from 'jquery';
 import arrow from '../img/arrow.svg';
 
@@ -171,7 +171,7 @@ const ServiceCreater = () => {
         <Fragment>
           {state.redirect ? (
             <Fragment>
-              <Redirect to='/others' />
+              <Navigate to='/others' replace />
             </Fragment>
           ) : (
             <Fragment></Fragment>

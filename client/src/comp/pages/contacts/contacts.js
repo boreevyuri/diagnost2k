@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 import arrow from './img/arrow.svg';
 
 const Contacts = () => {
@@ -14,7 +14,7 @@ const Contacts = () => {
       <div className={fsName}>
         <div className='mask'>
           <div className='text-container'>
-            <Switch>
+            <Routes>
               <Route exact path={`/contacts`}>
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
@@ -25,7 +25,7 @@ const Contacts = () => {
                   {t(`Navbar.1`)}
                 </div>
               </Route>
-            </Switch>
+            </Routes>
           </div>
         </div>
         <div className='fader-common'></div>

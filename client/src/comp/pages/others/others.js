@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import Footer from '../../footer/footer';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 import arrow from './img/arrow.svg';
@@ -60,7 +60,7 @@ const Others = (props) => {
       <div className={fsName}>
         <div className='mask'>
           <div className='text-container'>
-            <Switch>
+            <Routes>
               <Route exact path={`/other`}>
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
@@ -71,7 +71,7 @@ const Others = (props) => {
                   {t(`Others.Title`)}
                 </div>
               </Route>
-            </Switch>
+            </Routes>
           </div>
         </div>
         <div className='fader-common'></div>

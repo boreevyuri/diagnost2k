@@ -1,6 +1,6 @@
 import React, { useState, Fragment, useEffect } from 'react';
 import axios from 'axios';
-import { Redirect, Link } from 'react-router-dom';
+import { Navigate, Link } from 'react-router-dom';
 import Moment from 'react-moment';
 import { useTranslation } from 'react-i18next';
 
@@ -57,7 +57,7 @@ const DashboardContent = (props) => {
           <Fragment></Fragment>
         ) : (
           <Fragment>
-            <Redirect to={state.redirect} />
+            <Navigate to={state.redirect} replace />
           </Fragment>
         )}
       </Fragment>

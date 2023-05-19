@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Redirect, Link } from 'react-router-dom';
+import { Navigate, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logout } from '../../actions/auth';
@@ -12,7 +12,7 @@ const Auth = ({ auth: { isAuthenticated, user }, logout }) => {
           {!user ? (
             <Fragment>
               admin
-              <Redirect to='/' />
+              <Navigate to='/' replace />
             </Fragment>
           ) : (
               <Fragment>
