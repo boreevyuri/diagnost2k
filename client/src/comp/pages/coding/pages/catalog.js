@@ -24,14 +24,14 @@ const Catalog = (props) => {
   const { t } = useTranslation();
   return (
     <div>
-      <div class='about'>
-        <div class='two-row about-row'>
+      <div className='about'>
+        <div className='two-row about-row'>
           {t('Coding.About.1')}
           <br />
           <br />
           {t('Coding.About.2')}
         </div>
-        <div class='two-row about-row'>
+        <div className='two-row about-row'>
           {t('Coding.About.3')}
           <br />
           <br />

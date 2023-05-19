@@ -16,8 +16,8 @@ const Diagnostika = () => {
         <div className='fader-common'></div>
       </div>
       <div className='main-wrapper'>
-        <div class='about'>
-          <div class='two-row about-row'>
+        <div className='about'>
+          <div className='two-row about-row'>
             {t('Diagnostik.About_1.1')}
             <br />
             <br />
@@ -49,7 +49,7 @@ const Diagnostika = () => {
             <br />
           </div>
 
-          <div class='two-row about-row'>
+          <div className='two-row about-row'>
             {t('Diagnostik.About_1.11')}
             <br />
             <br />
@@ -81,10 +81,10 @@ const Diagnostika = () => {
             <br /> <br />
           </div>
         </div>
-        <div class='catalog'>
+        <div className='catalog'>
           <div className='title'>{t('Diagnostik.Catalog.Title')}</div>
           <div className='subtitle'>{t('Diagnostik.Catalog.Subtitle')}</div>
-          <div class='three-row catalog-row'>
+          <div className='three-row catalog-row'>
             <p>BMW 1 SERIES</p>
             <p>BMW 1 SERIES CONVERTIBLE</p>
             <p>BMW 1 SERIES COUPE</p>
@@ -103,7 +103,7 @@ const Diagnostika = () => {
             <p>BMW 4 SERIES CONVERTIBLE</p>
           </div>
 
-          <div class='three-row catalog-row'>
+          <div className='three-row catalog-row'>
             <p>BMW 4 SERIES GRAN COUPE</p>
             <p>BMW 5 SERIES</p>
             <p>BMW 5 SERIES GRAN TURISMO</p>
@@ -121,7 +121,7 @@ const Diagnostika = () => {
             <p>BMW I8</p>
             <p>BMW ISETTA</p>
           </div>
-          <div class='three-row catalog-row'>
+          <div className='three-row catalog-row'>
             <p>BMW M COUPE</p>
             <p>BMW M ROADSTER</p>
             <p>BMW M2</p>

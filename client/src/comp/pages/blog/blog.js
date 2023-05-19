@@ -16,13 +16,13 @@ const Blog = () => {
 
   useEffect(() => {
     getPosts();
-  }, []);
+  }, [getPosts]);
 
   const renderPosts = () => {
 
     return state.posts.map((item, index) => {
       let containerName = 'blog-col-1';
-      if (index % 5 == 0) {
+      if (index % 5 === 0) {
         containerName = 'blog-col-2';
       }
       console.log(state.posts);

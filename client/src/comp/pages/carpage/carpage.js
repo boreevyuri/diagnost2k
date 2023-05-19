@@ -10,7 +10,7 @@ const CarPage = (props) => {
 
   useEffect(() => {
     renderCar();
-  }, []);
+  }, [renderCar]);
 
   const [state, setState] = useState({
     title: '',
@@ -43,7 +43,7 @@ const CarPage = (props) => {
     let titleIndex = 0;
     return state.numbers.map((item, index) => {
       let content = item;
-      if (index % 3 == 0) {
+      if (index % 3 === 0) {
         content = t(`carpage.table.${titleIndex}`);
         titleIndex += 1;
       }
@@ -115,7 +115,7 @@ const CarPage = (props) => {
         <div className='main-wrapper'>
           <section>
             <div className='about'>
-              <div class='two-row about-row'>
+              <div className='two-row about-row'>
                 <Fragment>
                   {state.title ? (
                     <Fragment>
@@ -173,7 +173,7 @@ const CarPage = (props) => {
               </Fragment>
             </div>
             <div className='charts'>
-              <div class='two-row'>
+              <div className='two-row'>
                 <Fragment>
                   {!state.loaded ? (
                     <Fragment></Fragment>

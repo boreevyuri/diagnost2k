@@ -28,8 +28,8 @@ const CatalogItem = (props) => {
       <div className='catalog-item-main-img'>
         <img src={props.img} alt='' />
       </div>
-      <div class='catalog-item-main-text'>
-        <div class='item-text-row'>
+      <div className='catalog-item-main-text'>
+        <div className='item-text-row'>
           <div className='title-two'>
             {t('Coding.CatalogItem.Title-features')}
           </div>

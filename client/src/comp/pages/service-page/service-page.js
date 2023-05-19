@@ -65,8 +65,8 @@ const ServicePage = (props) => {
     console.log(state.data);
     return state.data.content.map((item, index) => {
       return (
-        <div class='item-text-row'>
-          <div class='item-text-row'>
+        <div className='item-text-row'>
+          <div className='item-text-row'>
             <Fragment>
               {item.type == 'title' ? (
                 <Fragment>
@@ -77,7 +77,7 @@ const ServicePage = (props) => {
               )}
             </Fragment>
           </div>
-          <div class='item-text-row'>
+          <div className='item-text-row'>
             <Fragment>
               {item.type == 'textarea' ? (
                 <Fragment>
@@ -90,7 +90,7 @@ const ServicePage = (props) => {
               )}
             </Fragment>
           </div>
-          <div class='item-text-row'>
+          <div className='item-text-row'>
             <Fragment>
               {item.type == 'list' ? (
                 <Fragment>
@@ -103,7 +103,7 @@ const ServicePage = (props) => {
               )}
             </Fragment>
           </div>
-          <div class='item-text-row'>
+          <div className='item-text-row'>
             <Fragment>
               {item.type == 'desc-list' ? (
                 <Fragment></Fragment>
@@ -193,7 +193,7 @@ const ServicePage = (props) => {
                     )}
                   </Fragment>
                 </div>
-                <div class='catalog-item-main-text'>
+                <div className='catalog-item-main-text'>
                   {renderContent()}
                   <div
                     onClick={() => popUpHandle(t(state.title))}

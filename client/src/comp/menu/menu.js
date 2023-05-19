@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import car from './img/car.svg';
 import more from './img/more.svg';
 import navigation from './img/navigation.svg';

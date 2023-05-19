@@ -92,8 +92,8 @@ const NavBar = (props) => {
             </Link>
           </div>
         </div>
-        <div onClick={() => handleMenu()} class='mobile-trigger'>
-          <button class='menu-toggle'></button>
+        <div onClick={() => handleMenu()} className='mobile-trigger'>
+          <button className='menu-toggle'></button>
         </div>
         <div className='navbar-contacts-mobile'>
           <div className='social-media-mobile'>

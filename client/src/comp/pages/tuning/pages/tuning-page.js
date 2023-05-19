@@ -93,7 +93,7 @@ const TuningPage = (props) => {
           {t('Tuning.CatalogItem.1.Features')}
         </div>
 
-        <div class='three-row cool-about-row'>
+        <div className='three-row cool-about-row'>
           <div className='cool-about-title'>
             {t('Tuning.CatalogItem.2.Title')}
           </div>
@@ -113,7 +113,7 @@ const TuningPage = (props) => {
       </div>
       <div className='about'>
         <div className='title'>{t('Tuning.Works.Title')}</div>
-        <div class='two-row about-row'>
+        <div className='two-row about-row'>
           {t('Tuning.Works.1')}
           <br />
           <br />

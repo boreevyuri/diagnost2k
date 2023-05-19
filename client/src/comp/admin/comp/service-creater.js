@@ -38,10 +38,10 @@ const ServiceCreater = (props) => {
 
   useEffect(() => {
     start();
-    //prodaction();
+    //production();
   }, []);
 
-  const prodaction = async () => {
+  const production = async () => {
     let testCz = [
       {
         type: 'mainTitle',

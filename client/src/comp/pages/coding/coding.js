@@ -17,14 +17,14 @@ const Coding = () => {
 
   const page = 'coding';
 
-  useEffect(() => {
-    getContent(page);
-  }, []);
-
   const getContent = async (category) => {
     let res = await axios.get(`/api/content/${category}`);
     setState({ ...state, data: res.data, loaded: true });
   };
+
+  useEffect(() => {
+    getContent(page);
+  }, [getContent]);
 
   const renderContent = () => {
     return state.data.map((item, index) => {

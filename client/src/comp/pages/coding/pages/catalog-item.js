@@ -68,8 +68,8 @@ const CatalogItem = (props) => {
             )}
         </Fragment>
       </div>
-      <div class='catalog-item-main-text'>
-        <div class='item-text-row'>
+      <div className='catalog-item-main-text'>
+        <div className='item-text-row'>
           <Fragment>
             {!props.features ? (
               <Fragment></Fragment>
@@ -81,7 +81,7 @@ const CatalogItem = (props) => {
               )}
           </Fragment>
         </div>
-        <div class='item-text-row'>
+        <div className='item-text-row'>
           <Fragment>
             {!props.listTitle ? (
               <Fragment></Fragment>
@@ -92,7 +92,7 @@ const CatalogItem = (props) => {
               )}
           </Fragment>
         </div>
-        <div class='item-text-row'>
+        <div className='item-text-row'>
           <Fragment>
             {!props.list ? (
               <Fragment></Fragment>
@@ -103,7 +103,7 @@ const CatalogItem = (props) => {
               )}
           </Fragment>
         </div>
-        <div class='item-text-row'>
+        <div className='item-text-row'>
           <Fragment>
             {!props.description ? (
               <Fragment></Fragment>

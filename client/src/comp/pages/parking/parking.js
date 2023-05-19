@@ -103,7 +103,7 @@ const Parking = () => {
           </Fragment>
           <section>
             <Routes>
-              <Route exact path='/parking' element={Catalog} />
+              <Route exact path='/parking' element={ Catalog } />
               <Route path='/parking/nav-update2020'>
                 <CatalogItem
                   setData={setDataFromProps}

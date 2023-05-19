@@ -37,7 +37,7 @@ const Dashboard = () => {
   const create = () => {
     console.log(state.focus);
     if (state.focus == 'all') {
-      return;
+
     } else if (state.focus == 'posts') {
       let link = `/post-creater/${state.focus}`;
       setState({ ...state, redirect: link });

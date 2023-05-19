@@ -53,8 +53,8 @@ const Catalog = () => {
           />
         </Link>
       </div>
-      <div class='about'>
-        <div class='two-row about-row'>
+      <div className='about'>
+        <div className='two-row about-row'>
           Когда вы регулярно обновляете навигацию BMW, ваша карта показывает
           вам:
           <br />
@@ -66,7 +66,7 @@ const Catalog = () => {
           3. Ежегодно добавляется почти 300 000 новых достопримечательностей
           (отели, заправки, кафе и т. Д.)
         </div>
-        <div class='two-row about-row'>
+        <div className='two-row about-row'>
           BMW рекомендует выполнять обновление карты навигационной системы BMW
           не реже одного раза в год. <br />
           <br />

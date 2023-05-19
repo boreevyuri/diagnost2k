@@ -79,7 +79,7 @@ const CatalogItemPage = (props) => {
                 }
 
               </div>
-              <div class='catalog-item-main-text'>
+              <div className='catalog-item-main-text'>
 
                 <ReactMarkdown>
                   {state.desc}

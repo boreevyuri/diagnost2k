@@ -6,7 +6,7 @@ import {
   LOGIN_SUCCESS,
   LOGOUT
 } from "./types";
-import { setAlert } from "./alert";
+// import { setAlert } from "./alert";
 import setAuthToken from "../utills/setAuthToken";
 
 const loadUser = () => async dispatch => {

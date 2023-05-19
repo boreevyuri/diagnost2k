@@ -115,7 +115,7 @@ const PopUpForm = (props) => {
                 name='name'
                 type='text'
                 value={name}
-                autocomplete='off'
+                autoComplete='off'
               />
             </div>
             <div className='input-container'>
@@ -125,7 +125,7 @@ const PopUpForm = (props) => {
                 name='phone'
                 type='text'
                 value={phone}
-                autocomplete='off'
+                autoComplete='off'
               />
             </div>
           </div>
@@ -168,19 +168,19 @@ const PopUpForm = (props) => {
         <div className='pop-up-form puf-3'>
           <div className='final-check'>
             <svg
-              class='checkmark'
+              className='checkmark'
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 52 52'
             >
               <circle
-                class='checkmark__circle'
+                className='checkmark__circle'
                 cx='26'
                 cy='26'
                 r='25'
                 fill='none'
               />
               <path
-                class='checkmark__check'
+                className='checkmark__check'
                 fill='none'
                 d='M14.1 27.2l7.1 7.2 16.7-16.8'
               />

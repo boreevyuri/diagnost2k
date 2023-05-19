@@ -17,7 +17,7 @@ const Post = (props) => {
 
   useEffect(() => {
     getPost();
-  }, []);
+  }, [getPost]);
 
   const getPost = async () => {
     let res = await axios.get(`https://diagnost2k.cz/posts?slug=${props.match.params.id}`);
