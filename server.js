@@ -5,7 +5,7 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 const server = require('http').Server(app);
 const addUser = require('./create-user');
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 app.use(bodyParser.json({ limit: '50mb', extended: true }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));

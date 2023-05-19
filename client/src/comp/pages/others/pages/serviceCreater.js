@@ -91,7 +91,7 @@ const ServiceCreater = () => {
           <Fragment>
             {item.type == 'title' ? (
               <Fragment>
-                <div className='creater-input-container'>
+                <div className='creator-input-container'>
                   <input
                     type='text'
                     placeholder='Новый заголовок'
@@ -113,7 +113,7 @@ const ServiceCreater = () => {
           <Fragment>
             {item.type == 'textarea' ? (
               <Fragment>
-                <div className='creater-input-container'>
+                <div className='creator-input-container'>
                   <textarea
                     onChange={(e) => onChange(e, index)}
                     value={item.value}
@@ -138,7 +138,7 @@ const ServiceCreater = () => {
           <Fragment>
             {item.type == 'list' ? (
               <Fragment>
-                <div className='creater-input-container'>
+                <div className='creator-input-container'>
                   <li>
                     {' '}
                     <input
@@ -185,8 +185,8 @@ const ServiceCreater = () => {
           </Link>
         </div>
       </div>
-      <div className='creater-form-container'>
-        <form className='creater-form'>
+      <div className='creator-form-container'>
+        <form className='creator-form'>
           <input
             onChange={(e) => onChangeName(e)}
             name='title'
@@ -199,8 +199,8 @@ const ServiceCreater = () => {
             <img id='preview' alt='' />
           </div>
 
-          <div className='creater-input-container'>
-            <div className='creater-input-label'>Превьею:</div>
+          <div className='creator-input-container'>
+            <div className='creator-input-label'>Превьею:</div>
             <input
               name='preview'
               className='file-upload'
@@ -221,7 +221,7 @@ const ServiceCreater = () => {
             Список
           </div>
         </div>
-        <div onClick={() => savePost()} className='btn-creater'>
+        <div onClick={() => savePost()} className='btn-creator'>
           Сохранить
         </div>
         <div className='input-alert'>

@@ -54,7 +54,7 @@ const CarPage = (props) => {
   const generateDescription = () => {
     return (
       <div className='carpage-description'>
-        <div className='cool-desctiption'>
+        <div className='cool-description'>
           <div className='cool-description-item'>
             <div className='big-digits'>
               <div className='cool-digits'>{state.numbers[1]}</div>

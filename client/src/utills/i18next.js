@@ -13,7 +13,7 @@ i18next
     useDataAttrOptions: true,
     whitelist: ['en', 'cz', 'ru'],
     backend: {
-      loadPath: 'https://diagnost2k.cz/translation/{{lng}}.json',
+      loadPath: 'https://diagnost2k.ru/translation/{{lng}}.json',
     },
   });
 

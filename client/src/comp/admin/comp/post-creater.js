@@ -201,7 +201,7 @@ const PostCreater = (props) => {
             <Fragment>
               {item.type == 'title' ? (
                 <Fragment>
-                  <div className='creater-input-container'>
+                  <div className='creator-input-container'>
                     <input
                       type='text'
                       placeholder='Новый заголовок'
@@ -223,9 +223,9 @@ const PostCreater = (props) => {
             <Fragment>
               {item.type == 'img' ? (
                 <Fragment>
-                  <div className='creater-input-container'>
+                  <div className='creator-input-container'>
                     <img id={`img${index}`} alt='' />
-                    <div className='creater-input-label'>Новая картинка:</div>
+                    <div className='creator-input-label'>Новая картинка:</div>
                     <input
                       onChange={(e) => onChangeFiles(e, index)}
                       className='file-upload'
@@ -247,7 +247,7 @@ const PostCreater = (props) => {
             <Fragment>
               {item.type == 'textarea' ? (
                 <Fragment>
-                  <div className='creater-input-container'>
+                  <div className='creator-input-container'>
                     <textarea
                       onChange={(e) => onChange(e, index)}
                       value={item.value}
@@ -272,7 +272,7 @@ const PostCreater = (props) => {
             <Fragment>
               {item.type == 'list' ? (
                 <Fragment>
-                  <div className='creater-input-container'>
+                  <div className='creator-input-container'>
                     <li>
                       {' '}
                       <input
@@ -315,8 +315,8 @@ const PostCreater = (props) => {
       <Fragment>
         {state.loaded ? (
           <Fragment>
-            <div className='creater-form-container'>
-              <div className='creater-tools'>
+            <div className='creator-form-container'>
+              <div className='creator-tools'>
                 <div className='back-arrow'>
                   <Link to='/admin'>
                     <img src={arrow} alt='' />
@@ -344,7 +344,7 @@ const PostCreater = (props) => {
                 </div>
               </div>
 
-              <form className='creater-form'>
+              <form className='creator-form'>
                 <input
                   onChange={(e) => onChangeName(e)}
                   name='mainTitle'
@@ -357,8 +357,8 @@ const PostCreater = (props) => {
                   <img id='preview' alt='' />
                 </div>
 
-                <div className='creater-input-container'>
-                  <div className='creater-input-label'>Превьею:</div>
+                <div className='creator-input-container'>
+                  <div className='creator-input-label'>Превьею:</div>
                   <input
                     name='preview'
                     className='file-upload'
@@ -382,7 +382,7 @@ const PostCreater = (props) => {
                   Изображение
                 </div>
               </div>
-              <div onClick={() => savePost()} className='btn-creater'>
+              <div onClick={() => savePost()} className='btn-creator'>
                 Сохранить
               </div>
               <div className='input-alert'>
