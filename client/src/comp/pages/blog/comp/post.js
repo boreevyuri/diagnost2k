@@ -1,12 +1,12 @@
-import React, { useState, Fragment, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import React, {useState, Fragment, useEffect} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 import arrow from './img/arrow.svg';
 import ReactMarkdown from 'react-markdown'
 
 const Post = (props) => {
-  const { t } = useTranslation();
+  const {t} = useTranslation();
 
   const [state, setState] = useState({
     title: '',
@@ -15,12 +15,9 @@ const Post = (props) => {
     loaded: false,
   });
 
-  useEffect(() => {
-    getPost();
-  }, [getPost]);
 
   const getPost = async () => {
-    let res = await axios.get(`https://diagnost2k.cz/posts?slug=${props.match.params.id}`);
+    let res = await axios.get(`https://diagnost2k.ru/posts?slug=${props.match.params.id}`);
     let data = res.data[0];
     console.log(data);
     setState({
@@ -32,6 +29,9 @@ const Post = (props) => {
     });
   };
 
+  useEffect(() => {
+    getPost();
+  }, [getPost]);
 
   return (
     <div className='blog-page'>
@@ -43,13 +43,13 @@ const Post = (props) => {
                 <div className='blog-page-container'>
                   <div className='back-arrow'>
                     <Link to='/blog'>
-                      <img src={arrow} alt='' />
+                      <img src={arrow} alt=''/>
                     </Link>
                   </div>
                   <div className='blog-page-title'>{t(state.title)}</div>
                   <div className='blog-page-preview'>
                     <img
-                      src={`https://diagnost2k.cz${state.preview.url}`}
+                      src={`https://diagnost2k.ru${state.preview.url}`}
                       alt=''
                     />
                   </div>
@@ -63,10 +63,10 @@ const Post = (props) => {
               </Fragment>
             </Fragment>
           ) : (
-              <Fragment>
-                <p className='loading-blog-page'>Loading...</p>
-              </Fragment>
-            )}
+            <Fragment>
+              <p className='loading-blog-page'>Loading...</p>
+            </Fragment>
+          )}
         </Fragment>
       </div>
     </div>

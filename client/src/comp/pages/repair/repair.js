@@ -15,7 +15,7 @@ const Repair = () => {
         <div className='mask'>
           <div className='text-container'>
             <Routes>
-              <Route exact path={`/file-service`}>
+              <Route exact path={`/file-service`} element={
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
                     <div className='catalog-back-trigger common-back'>
@@ -24,7 +24,7 @@ const Repair = () => {
                   </Link>
                   {t(`Menu.10`)}
                 </div>
-              </Route>
+              } />
             </Routes>
           </div>
         </div>

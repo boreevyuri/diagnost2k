@@ -15,7 +15,7 @@ const AutoPick = () => {
         <div className='mask'>
           <div className='text-container'>
             <Routes>
-              <Route exact path={`/autopick`}>
+              <Route exact path={`/autopick`} element={
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
                     <div className='catalog-back-trigger common-back'>
@@ -24,7 +24,7 @@ const AutoPick = () => {
                   </Link>
                   {t(`Menu.7`)}
                 </div>
-              </Route>
+              } />
             </Routes>
           </div>
         </div>

@@ -14,6 +14,17 @@ const Blog = () => {
 
   const page = 'blog';
 
+  const getPosts = async () => {
+    let res = await axios.get(`https://diagnost2k.ru/posts`);
+    if (res.data.length > 0) {
+      setState({
+        ...state,
+        posts: res.data,
+        loaded: true,
+      });
+    }
+  };
+
   useEffect(() => {
     getPosts();
   }, [getPosts]);
@@ -31,7 +42,7 @@ const Blog = () => {
           <div className='article'>
             <Link to={`/post/${item.slug}`}>
               <div className='article-container'>
-                <img src={`https://diagnost2k.cz${item.Preview.url}`} alt='' />
+                <img src={`https://diagnost2k.ru${item.Preview.url}`} alt='' />
                 <div className='article-title'>{item.Name}</div>
                 <div className='fader-common blog-fader'></div>
               </div>
@@ -42,16 +53,6 @@ const Blog = () => {
     });
   };
 
-  const getPosts = async () => {
-    let res = await axios.get(`https://diagnost2k.cz/posts`);
-    if (res.data.length > 0) {
-      setState({
-        ...state,
-        posts: res.data,
-        loaded: true,
-      });
-    }
-  };
 
   const firstscreenRender = () => {
     let fsName = 'firstscreen-common fs-common-' + page;

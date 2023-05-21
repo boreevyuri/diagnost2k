@@ -1,16 +1,13 @@
-import React, { useState, Fragment, useEffect } from 'react';
+import React, {useState, Fragment, useEffect} from 'react';
 import Footer from '../../footer/footer';
 import axios from 'axios';
 import arrow from './img/arrow.svg';
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 import $ from 'jquery';
 
 const CarPage = (props) => {
-  const { t, i18n } = useTranslation();
+  const {t, i18n} = useTranslation();
 
-  useEffect(() => {
-    renderCar();
-  }, [renderCar]);
 
   const [state, setState] = useState({
     title: '',
@@ -39,6 +36,10 @@ const CarPage = (props) => {
     });
   };
 
+  useEffect(() => {
+    renderCar();
+  }, [renderCar]);
+
   const numbers = () => {
     let titleIndex = 0;
     return state.numbers.map((item, index) => {
@@ -58,7 +59,7 @@ const CarPage = (props) => {
           <div className='cool-description-item'>
             <div className='big-digits'>
               <div className='cool-digits'>{state.numbers[1]}</div>
-              <img src={arrow} alt='' />
+              <img src={arrow} alt=''/>
               <div className='cool-digits'>{state.numbers[2]}</div>
             </div>
             <div className='cool-description-text'>{t('carpage.cool.0')}</div>
@@ -66,7 +67,7 @@ const CarPage = (props) => {
           <div className='cool-description-item'>
             <div className='big-digits'>
               <div className='cool-digits'>{state.numbers[7]}</div>
-              <img src={arrow} alt='' />
+              <img src={arrow} alt=''/>
               <div className='cool-digits'>{state.numbers[8]}</div>
             </div>
 
@@ -102,8 +103,8 @@ const CarPage = (props) => {
                   {state.title ? (
                     <Fragment>{state.title}</Fragment>
                   ) : (
-                      <Fragment></Fragment>
-                    )}
+                    <Fragment></Fragment>
+                  )}
                 </Fragment>
               </div>
               <div className='fs-subtitle'></div>
@@ -130,8 +131,8 @@ const CarPage = (props) => {
                       )} */}
                     </Fragment>
                   ) : (
-                      <Fragment></Fragment>
-                    )}
+                    <Fragment></Fragment>
+                  )}
                 </Fragment>
               </div>
               <div className='two-row about-row'>
@@ -140,19 +141,19 @@ const CarPage = (props) => {
                     {!state.loaded ? (
                       <Fragment></Fragment>
                     ) : (
-                        <Fragment>
-                          {state.imgUrl ? (
-                            <Fragment>
-                              <img
-                                src={`https://diagnost2k.cz/server-${state.imgUrl}`}
-                                alt=''
-                              />
-                            </Fragment>
-                          ) : (
-                              <Fragment></Fragment>
-                            )}
-                        </Fragment>
-                      )}
+                      <Fragment>
+                        {state.imgUrl ? (
+                          <Fragment>
+                            <img
+                              src={`https://diagnost2k.ru/server-${state.imgUrl}`}
+                              alt=''
+                            />
+                          </Fragment>
+                        ) : (
+                          <Fragment></Fragment>
+                        )}
+                      </Fragment>
+                    )}
                   </Fragment>
                 </div>
               </div>
@@ -162,14 +163,14 @@ const CarPage = (props) => {
                 {!state.loaded ? (
                   <Fragment></Fragment>
                 ) : (
-                    <Fragment>
-                      {state.numbers ? (
-                        <Fragment>{numbers()}</Fragment>
-                      ) : (
-                          <Fragment></Fragment>
-                        )}
-                    </Fragment>
-                  )}
+                  <Fragment>
+                    {state.numbers ? (
+                      <Fragment>{numbers()}</Fragment>
+                    ) : (
+                      <Fragment></Fragment>
+                    )}
+                  </Fragment>
+                )}
               </Fragment>
             </div>
             <div className='charts'>
@@ -178,19 +179,19 @@ const CarPage = (props) => {
                   {!state.loaded ? (
                     <Fragment></Fragment>
                   ) : (
-                      <Fragment>
-                        {state.chartPower ? (
-                          <Fragment>
-                            <img
-                              src={`https://diagnost2k.cz/server-${state.chartPower}`}
-                              alt=''
-                            />
-                          </Fragment>
-                        ) : (
-                            <Fragment></Fragment>
-                          )}
-                      </Fragment>
-                    )}
+                    <Fragment>
+                      {state.chartPower ? (
+                        <Fragment>
+                          <img
+                            src={`https://diagnost2k.ru/server-${state.chartPower}`}
+                            alt=''
+                          />
+                        </Fragment>
+                      ) : (
+                        <Fragment></Fragment>
+                      )}
+                    </Fragment>
+                  )}
                 </Fragment>
               </div>
               <div className='two-row'>
@@ -199,25 +200,25 @@ const CarPage = (props) => {
                     {!state.loaded ? (
                       <Fragment></Fragment>
                     ) : (
-                        <Fragment>
-                          {state.chartTorque ? (
-                            <Fragment>
-                              <img
-                                src={`https://diagnost2k.cz/server-${state.chartTorque}`}
-                                alt=''
-                              />
-                            </Fragment>
-                          ) : (
-                              <Fragment></Fragment>
-                            )}
-                        </Fragment>
-                      )}
+                      <Fragment>
+                        {state.chartTorque ? (
+                          <Fragment>
+                            <img
+                              src={`https://diagnost2k.ru/server-${state.chartTorque}`}
+                              alt=''
+                            />
+                          </Fragment>
+                        ) : (
+                          <Fragment></Fragment>
+                        )}
+                      </Fragment>
+                    )}
                   </Fragment>
                 </div>
               </div>
             </div>
           </section>
-          <Footer />
+          <Footer/>
         </div>
       </div>
     </div>

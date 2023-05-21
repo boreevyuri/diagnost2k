@@ -45,7 +45,7 @@ router.post('/', async (req, res) => {
   `;
 
   let info = await transporter.sendMail({
-    from: '"ПОЧТОВЫЙ ДУХ 👻" <helper@diagnost2k.cz>', // sender address
+    from: '"ПОЧТОВЫЙ ДУХ 👻" <helper@diagnost2k.ru>', // sender address
     to: 'geka1607@gmail.com', // list of receivers,
     subject: `😎 Diagnost2k | Новый клиент по имени ${req.body.name}`, // Subject line
     text: '', // plain text body

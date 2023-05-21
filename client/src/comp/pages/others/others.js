@@ -21,7 +21,7 @@ const Others = (props) => {
   }, []);
 
   const getContent = async () => {
-    let res = await axios.get(`https://diagnost2k.cz/others`);
+    let res = await axios.get(`https://diagnost2k.ru/others`);
 
     console.log(res);
     setState({ ...state, data: res.data, loaded: true });
@@ -37,7 +37,7 @@ const Others = (props) => {
               <div className='cool-catalog-container'>
                 <div className='catalog-item-img'>
                   <img
-                    src={`https://diagnost2k.cz${item.Image[0].url}`}
+                    src={`https://diagnost2k.ru${item.Image[0].url}`}
                     alt=''
                   />
                 </div>
@@ -61,7 +61,7 @@ const Others = (props) => {
         <div className='mask'>
           <div className='text-container'>
             <Routes>
-              <Route exact path={`/other`}>
+              <Route exact path={`/other`} element={
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
                     <div className='catalog-back-trigger common-back'>
@@ -70,7 +70,7 @@ const Others = (props) => {
                   </Link>
                   {t(`Others.Title`)}
                 </div>
-              </Route>
+              } />
             </Routes>
           </div>
         </div>

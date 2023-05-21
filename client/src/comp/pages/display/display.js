@@ -43,7 +43,7 @@ const Display = () => {
               <div className='cool-catalog-container'>
                 <div className='catalog-item-img'>
                   <img
-                    src={`https://diagnost2k.cz/${state.data[index].preview}`}
+                    src={`https://diagnost2k.ru/${state.data[index].preview}`}
                     alt=''
                   />
                 </div>
@@ -67,7 +67,7 @@ const Display = () => {
         <div className='mask'>
           <div className='text-container'>
             <Routes>
-              <Route exact path={`/displays`}>
+              <Route exact path={`/displays`} element={
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
                     <div className='catalog-back-trigger common-back'>
@@ -76,7 +76,7 @@ const Display = () => {
                   </Link>
                   {t(`Displays.Title`)}
                 </div>
-              </Route>
+              } />
             </Routes>
           </div>
         </div>
@@ -101,7 +101,7 @@ const Display = () => {
           <section>
             <Routes>
               <Route exact path='/displays' component={Catalog} />
-              <Route path='/displays/6wa-hybrid'>
+              <Route path='/displays/6wa-hybrid' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav1}
@@ -109,8 +109,8 @@ const Display = () => {
                   features={t('Displays.CatalogItem.1.Features')}
                   description={t('Displays.CatalogItem.1.Description')}
                 />
-              </Route>
-              <Route path='/displays/6wb-digital'>
+              } />
+              <Route path='/displays/6wb-digital' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav2}
@@ -118,8 +118,8 @@ const Display = () => {
                   features={t('Displays.CatalogItem.2.Features')}
                   description={t('Displays.CatalogItem.2.Description')}
                 />
-              </Route>
-              <Route path='/displays/vividscreen-idrive'>
+              } />
+              <Route path='/displays/vividscreen-idrive' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav3}
@@ -127,7 +127,7 @@ const Display = () => {
                   features={t('Displays.CatalogItem.3.Features')}
                   description={t('Displays.CatalogItem.3.Description')}
                 />
-              </Route>
+              } />
             </Routes>
           </section>
           <Footer />

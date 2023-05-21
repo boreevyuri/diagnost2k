@@ -1,10 +1,10 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, {useState, useEffect, Fragment} from 'react';
 import Footer from '../../footer/footer';
-import { Route, Routes } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import {Route, Routes} from 'react-router-dom';
+import {useTranslation} from 'react-i18next';
 import arrow from './img/arrow.svg';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Catalog from './pages/catalog.js';
 import CatalogItem from './pages/catalog-item.js';
 import PopUpForm from '../../pop-up-form/pop-up-form';
@@ -25,7 +25,7 @@ const Smartphone = () => {
   });
 
   const setDataFromProps = (service_name) => {
-    setState({ ...state, service_name: service_name });
+    setState({...state, service_name: service_name});
   };
 
   const page = 'multimedia';
@@ -36,7 +36,7 @@ const Smartphone = () => {
 
   const getContent = async (category) => {
     let res = await axios.get(`/api/content/${category}`);
-    setState({ ...state, data: res.data, loaded: true });
+    setState({...state, data: res.data, loaded: true});
   };
 
   const renderContent = () => {
@@ -49,7 +49,7 @@ const Smartphone = () => {
               <div className='cool-catalog-container'>
                 <div className='catalog-item-img'>
                   <img
-                    src={`https://diagnost2k.cz/${state.data[index].preview}`}
+                    src={`https://diagnost2k.ru/${state.data[index].preview}`}
                     alt=''
                   />
                 </div>
@@ -64,7 +64,7 @@ const Smartphone = () => {
     });
   };
 
-  const { t } = useTranslation();
+  const {t} = useTranslation();
 
   const firstscreenRender = () => {
     let fsName = 'firstscreen-common fs-common-' + page;
@@ -73,16 +73,18 @@ const Smartphone = () => {
         <div className='mask'>
           <div className='text-container'>
             <Routes>
-              <Route exact path={`/smartphone`}>
-                <div className='cool-fs-title'>
-                  <Link to={`/`}>
-                    <div className='catalog-back-trigger common-back'>
-                      <img src={arrow} alt='' />
-                    </div>
-                  </Link>
-                  {t(`Smartphone.Title`)}
-                </div>
-              </Route>
+              <Route exact path={`/smartphone`}
+                     element={
+                       <div className='cool-fs-title'>
+                         <Link to={`/`}>
+                           <div className='catalog-back-trigger common-back'>
+                             <img src={arrow} alt=''/>
+                           </div>
+                         </Link>
+                         {t(`Smartphone.Title`)}
+                       </div>
+                     }
+              />
             </Routes>
           </div>
         </div>
@@ -93,7 +95,7 @@ const Smartphone = () => {
 
   return (
     <div className='smartphones='>
-      <PopUpForm service_name={state.service_name} />
+      <PopUpForm service_name={state.service_name}/>
       <div className='blur'>
         {firstscreenRender()}
         <div className='main-wrapper'>
@@ -106,8 +108,8 @@ const Smartphone = () => {
           </Fragment>
           <section>
             <Routes>
-              <Route exact path='/smartphone' element={Catalog} />
-              <Route path='/smartphone/carplay'>
+              <Route exact path='/smartphone' element={<Catalog />}/>
+              <Route path='/smartphone/carplay' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav1}
@@ -115,8 +117,8 @@ const Smartphone = () => {
                   features={t('Smartphone.CatalogItem.1.Features')}
                   description={t('Smartphone.CatalogItem.1.Description')}
                 />
-              </Route>
-              <Route path='/smartphone/smartview-flex'>
+              } />
+              <Route path='/smartphone/smartview-flex' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav2}
@@ -124,8 +126,8 @@ const Smartphone = () => {
                   features={t('Smartphone.CatalogItem.2.Features')}
                   description={t('Smartphone.CatalogItem.2.Description')}
                 />
-              </Route>
-              <Route path='/smartphone/smartview-apple-tv4'>
+              } />
+              <Route path='/smartphone/smartview-apple-tv4' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav3}
@@ -133,8 +135,8 @@ const Smartphone = () => {
                   features={t('Smartphone.CatalogItem.3.Features')}
                   description={t('Smartphone.CatalogItem.3.Description')}
                 />
-              </Route>
-              <Route path='/smartphone/smartview-apple-tv3'>
+              } />
+              <Route path='/smartphone/smartview-apple-tv3' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav4}
@@ -142,8 +144,8 @@ const Smartphone = () => {
                   features={t('Smartphone.CatalogItem.4.Features')}
                   description={t('Smartphone.CatalogItem.4.Description')}
                 />
-              </Route>
-              <Route path='/smartphone/android-auto'>
+              } />
+              <Route path='/smartphone/android-auto' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav5}
@@ -151,8 +153,8 @@ const Smartphone = () => {
                   features={t('Smartphone.CatalogItem.5.Features')}
                   description={t('Smartphone.CatalogItem.5.Description')}
                 />
-              </Route>
-              <Route path='/Smartphone/carplay-apple'>
+              } />
+              <Route path='/Smartphone/carplay-apple' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav6}
@@ -160,8 +162,8 @@ const Smartphone = () => {
                   features={t('Smartphone.CatalogItem.6.Features')}
                   description={t('Smartphone.CatalogItem.6.Description')}
                 />
-              </Route>
-              <Route path='/Smartphone/bmw-bluetooth'>
+              } />
+              <Route path='/Smartphone/bmw-bluetooth' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav7}
@@ -169,8 +171,8 @@ const Smartphone = () => {
                   features={t('Smartphone.CatalogItem.7.Features')}
                   description={t('Smartphone.CatalogItem.7.Description')}
                 />
-              </Route>
-              <Route path='/Smartphone/aux-port'>
+              } />
+              <Route path='/Smartphone/aux-port' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav8}
@@ -178,8 +180,8 @@ const Smartphone = () => {
                   features={t('Smartphone.CatalogItem.8.Features')}
                   description={t('Smartphone.CatalogItem.8.Description')}
                 />
-              </Route>
-              <Route path='/Smartphone/alpha-one'>
+              } />
+              <Route path='/Smartphone/alpha-one' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav9}
@@ -187,10 +189,10 @@ const Smartphone = () => {
                   features={t('Smartphone.CatalogItem.9.Features')}
                   description={t('Smartphone.CatalogItem.9.Description')}
                 />
-              </Route>
+              } />
             </Routes>
           </section>
-          <Footer />
+          <Footer/>
         </div>
       </div>
     </div>

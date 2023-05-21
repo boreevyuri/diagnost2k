@@ -1,10 +1,10 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, {useState, useEffect, Fragment} from 'react';
 import Footer from '../../footer/footer';
-import { Route, Routes } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import {Route, Routes} from 'react-router-dom';
+import {useTranslation} from 'react-i18next';
 import arrow from './img/arrow.svg';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Catalog from './pages/catalog.js';
 import CatalogItem from './pages/catalog-item.js';
 import PopUpForm from '../../pop-up-form/pop-up-form';
@@ -22,7 +22,7 @@ const Navigation = () => {
   });
 
   const setDataFromProps = (service_name) => {
-    setState({ ...state, service_name: service_name });
+    setState({...state, service_name: service_name});
   };
 
   const page = 'navigation';
@@ -33,7 +33,7 @@ const Navigation = () => {
 
   const getContent = async (category) => {
     let res = await axios.get(`/api/content/${category}`);
-    setState({ ...state, data: res.data, loaded: true });
+    setState({...state, data: res.data, loaded: true});
   };
 
   const renderContent = () => {
@@ -46,7 +46,7 @@ const Navigation = () => {
               <div className='cool-catalog-container'>
                 <div className='catalog-item-img'>
                   <img
-                    src={`https://diagnost2k.cz/${state.data[index].preview}`}
+                    src={`https://diagnost2k.ru/${state.data[index].preview}`}
                     alt=''
                   />
                 </div>
@@ -61,7 +61,7 @@ const Navigation = () => {
     });
   };
 
-  const { t } = useTranslation();
+  const {t} = useTranslation();
 
   const firstscreenRender = () => {
     let fsName = 'firstscreen-common fs-common-' + page;
@@ -70,16 +70,16 @@ const Navigation = () => {
         <div className='mask'>
           <div className='text-container'>
             <Routes>
-              <Route exact path={`/${page}`}>
+              <Route exact path={`/${page}`} element={
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
                     <div className='catalog-back-trigger common-back'>
-                      <img src={arrow} alt='' />
+                      <img src={arrow} alt=''/>
                     </div>
                   </Link>
                   {t(`Navigation.Title`)}
                 </div>
-              </Route>
+              } />
             </Routes>
           </div>
         </div>
@@ -90,7 +90,7 @@ const Navigation = () => {
 
   return (
     <div className='navigation'>
-      <PopUpForm service_name={state.service_name} />
+      <PopUpForm service_name={state.service_name}/>
       <div className='blur'>
         {firstscreenRender()}
         <div className='main-wrapper'>
@@ -103,8 +103,8 @@ const Navigation = () => {
           </Fragment>
           <section>
             <Routes>
-              <Route exact path='/navigation' element={Catalog} />
-              <Route path='/navigation/nav-update2020'>
+              <Route exact path='/navigation' element={<Catalog />} />
+              <Route path='/navigation/nav-update2020' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav1}
@@ -112,8 +112,8 @@ const Navigation = () => {
                   features={t('Navigation.CatalogItem.1.Features')}
                   description={t('Navigation.CatalogItem.1.Description')}
                 />
-              </Route>
-              <Route path='/navigation/nbt-evo-id5-id6'>
+              } />
+              <Route path='/navigation/nbt-evo-id5-id6' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav2}
@@ -121,8 +121,8 @@ const Navigation = () => {
                   features={t('Navigation.CatalogItem.2.Features')}
                   description={t('Navigation.CatalogItem.2.Description')}
                 />
-              </Route>
-              <Route path='/navigation/cic-nav-system'>
+              } />
+              <Route path='/navigation/cic-nav-system' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav3}
@@ -130,41 +130,42 @@ const Navigation = () => {
                   features={t('Navigation.CatalogItem.3.Features')}
                   description={t('Navigation.CatalogItem.3.Description')}
                 />
-              </Route>
-              <Route path='/navigation/speed-limit'>
-                <CatalogItem
-                  setData={setDataFromProps}
-                  img={nav4}
-                  title={t('Navigation.CatalogItem.4.Title')}
-                  features={t('Navigation.CatalogItem.4.Features')}
-                  description={t('Navigation.CatalogItem.4.Description')}
-                />
-              </Route>
-              <Route path='/navigation/nbt-evo-id4'>
-                <CatalogItem
-                  setData={setDataFromProps}
-                  img={nav5}
-                  title={t('Navigation.CatalogItem.5.Title')}
-                  features={t('Navigation.CatalogItem.5.Features')}
-                  description={t('Navigation.CatalogItem.5.Description')}
-                />
-              </Route>
-              <Route path='/navigation/idrive-touch-controller'>
-                <CatalogItem
-                  setData={setDataFromProps}
-                  img={nav6}
-                  title={t('Navigation.CatalogItem.6.Title')}
-                  features={t('Navigation.CatalogItem.6.Features')}
-                  description={t('Navigation.CatalogItem.6.Description')}
-                />
-              </Route>
-            </Routes>
-          </section>
-          <Footer />
-        </div>
+              } />
+            <Route path='/navigation/speed-limit' element={
+              <CatalogItem
+                setData={setDataFromProps}
+                img={nav4}
+                title={t('Navigation.CatalogItem.4.Title')}
+                features={t('Navigation.CatalogItem.4.Features')}
+                description={t('Navigation.CatalogItem.4.Description')}
+              />
+            } />
+            <Route path='/navigation/nbt-evo-id4' element={
+              <CatalogItem
+                setData={setDataFromProps}
+                img={nav5}
+                title={t('Navigation.CatalogItem.5.Title')}
+                features={t('Navigation.CatalogItem.5.Features')}
+                description={t('Navigation.CatalogItem.5.Description')}
+              />
+            } />
+            <Route path='/navigation/idrive-touch-controller' element={
+              <CatalogItem
+                setData={setDataFromProps}
+                img={nav6}
+                title={t('Navigation.CatalogItem.6.Title')}
+                features={t('Navigation.CatalogItem.6.Features')}
+                description={t('Navigation.CatalogItem.6.Description')}
+              />
+            } />
+          </Routes>
+        </section>
+        <Footer/>
       </div>
     </div>
-  );
+</div>
+)
+  ;
 };
 
 export default Navigation;

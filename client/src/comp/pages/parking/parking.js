@@ -1,10 +1,10 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, {useState, useEffect, Fragment} from 'react';
 import Footer from '../../footer/footer';
-import { Route, Routes } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import {Route, Routes} from 'react-router-dom';
+import {useTranslation} from 'react-i18next';
 import arrow from './img/arrow.svg';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Catalog from './pages/catalog.js';
 import CatalogItem from './pages/catalog-item.js';
 import PopUpForm from '../../pop-up-form/pop-up-form';
@@ -22,7 +22,7 @@ const Parking = () => {
   });
 
   const setDataFromProps = (service_name) => {
-    setState({ ...state, service_name: service_name });
+    setState({...state, service_name: service_name});
   };
 
   const page = 'parking';
@@ -33,7 +33,7 @@ const Parking = () => {
 
   const getContent = async (category) => {
     let res = await axios.get(`/api/content/${category}`);
-    setState({ ...state, data: res.data, loaded: true });
+    setState({...state, data: res.data, loaded: true});
   };
 
   const renderContent = () => {
@@ -46,7 +46,7 @@ const Parking = () => {
               <div className='cool-catalog-container'>
                 <div className='catalog-item-img'>
                   <img
-                    src={`https://diagnost2k.cz/${state.data[index].preview}`}
+                    src={`https://diagnost2k.ru/${state.data[index].preview}`}
                     alt=''
                   />
                 </div>
@@ -61,7 +61,7 @@ const Parking = () => {
     });
   };
 
-  const { t } = useTranslation();
+  const {t} = useTranslation();
 
   const firstscreenRender = () => {
     let fsName = 'firstscreen-common fs-common-' + page;
@@ -70,27 +70,28 @@ const Parking = () => {
         <div className='mask'>
           <div className='text-container'>
             <Routes>
-              <Route exact path={`/parking`}>
+              <Route exact path={`/parking`} element={
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
                     <div className='catalog-back-trigger common-back'>
-                      <img src={arrow} alt='' />
+                      <img src={arrow} alt=''/>
                     </div>
                   </Link>
                   {t(`Parking.Title`)}
                 </div>
-              </Route>
-            </Routes>
-          </div>
+              } />
+          </Routes>
         </div>
-        <div className='fader-common'></div>
       </div>
-    );
+    <div className='fader-common'></div>
+  </div>
+  )
+    ;
   };
 
   return (
     <div className='parking'>
-      <PopUpForm service_name={state.service_name} />
+      <PopUpForm service_name={state.service_name}/>
       <div className='blur'>
         {firstscreenRender()}
         <div className='main-wrapper'>
@@ -103,8 +104,8 @@ const Parking = () => {
           </Fragment>
           <section>
             <Routes>
-              <Route exact path='/parking' element={ Catalog } />
-              <Route path='/parking/nav-update2020'>
+              <Route exact path='/parking' element={<Catalog/>}/>
+              <Route path='/parking/nav-update2020' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav1}
@@ -112,8 +113,8 @@ const Parking = () => {
                   features={t('Parking.CatalogItem.1.Features')}
                   description={t('Parking.CatalogItem.1.Description')}
                 />
-              </Route>
-              <Route path='/parking/nbt-evo-id5-id6'>
+              } />
+              <Route path='/parking/nbt-evo-id5-id6' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav2}
@@ -121,8 +122,8 @@ const Parking = () => {
                   features={t('Parking.CatalogItem.2.Features')}
                   description={t('Parking.CatalogItem.2.Description')}
                 />
-              </Route>
-              <Route path='/parking/cic-nav-system'>
+              } />
+              <Route path='/parking/cic-nav-system' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav3}
@@ -130,8 +131,8 @@ const Parking = () => {
                   features={t('Parking.CatalogItem.3.Features')}
                   description={t('Parking.CatalogItem.3.Description')}
                 />
-              </Route>
-              <Route path='/parking/speed-limit'>
+              } />
+              <Route path='/parking/speed-limit' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav4}
@@ -139,8 +140,8 @@ const Parking = () => {
                   features={t('Parking.CatalogItem.4.Features')}
                   description={t('Parking.CatalogItem.4.Description')}
                 />
-              </Route>
-              <Route path='/parking/nbt-evo-id4'>
+              } />
+              <Route path='/parking/nbt-evo-id4' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav5}
@@ -148,8 +149,8 @@ const Parking = () => {
                   features={t('Parking.CatalogItem.5.Features')}
                   description={t('Parking.CatalogItem.5.Description')}
                 />
-              </Route>
-              <Route path='/parking/idrive-touch-controller'>
+              } />
+              <Route path='/parking/idrive-touch-controller' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav6}
@@ -157,10 +158,10 @@ const Parking = () => {
                   features={t('Parking.CatalogItem.6.Features')}
                   description={t('Parking.CatalogItem.6.Description')}
                 />
-              </Route>
+              } />
             </Routes>
           </section>
-          <Footer />
+          <Footer/>
         </div>
       </div>
     </div>
