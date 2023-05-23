@@ -17,7 +17,7 @@ const Post = (props) => {
 
 
   const getPost = async () => {
-    let res = await axios.get(`https://diagnost2k.ru/posts?slug=${props.match.params.id}`);
+    let res = await axios.get(`/posts?slug=${props.match.params.id}`);
     let data = res.data[0];
     console.log(data);
     setState({
@@ -49,7 +49,7 @@ const Post = (props) => {
                   <div className='blog-page-title'>{t(state.title)}</div>
                   <div className='blog-page-preview'>
                     <img
-                      src={`https://diagnost2k.ru${state.preview.url}`}
+                      src={`${state.preview.url}`}
                       alt=''
                     />
                   </div>

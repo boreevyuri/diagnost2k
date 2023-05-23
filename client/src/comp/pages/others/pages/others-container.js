@@ -12,7 +12,7 @@ const Others = (props) => {
             <div className='cool-catalog-item'>
               <div className='cool-catalog-container'>
                 <div className='catalog-item-img'>
-                  <img src={`https://diagnost2k.ru/${item.value}`} alt='' />
+                  <img src={`/${item.value}`} alt='' />
                 </div>
                 <div className='catalog-item-text'>{item.title}</div>
               </div>

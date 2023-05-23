@@ -339,7 +339,7 @@ const Editor = (props) => {
                 <div className='preview-container'>
                   <img
                     id='preview'
-                    src={`https://diagnost2k.ru/${state.preview}`}
+                    src={`/${state.preview}`}
                     alt=''
                   />
                 </div>

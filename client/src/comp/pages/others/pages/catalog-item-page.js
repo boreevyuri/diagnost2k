@@ -20,7 +20,7 @@ const CatalogItemPage = (props) => {
   }, []);
 
   const getCatalogItem = async () => {
-    let res = await axios.get(`https://diagnost2k.ru/others?slug=${props.match.params.id}`);
+    let res = await axios.get(`/others?slug=${props.match.params.id}`);
     let data = res.data[0];
     console.log(data)
     setState({
@@ -69,7 +69,7 @@ const CatalogItemPage = (props) => {
                     {state.loaded ? (
                       state.image.map((item) => {
                         return (
-                          <img className='catalog-page-image' src={`https://diagnost2k.ru${item.url}`} alt='' />
+                          <img className='catalog-page-image' src={`${item.url}`} alt='' />
                         )
                       })
                     ) : (

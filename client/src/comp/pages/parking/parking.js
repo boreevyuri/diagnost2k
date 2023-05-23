@@ -38,6 +38,7 @@ const Parking = () => {
 
   const renderContent = () => {
     return state.data.map((item, index) => {
+      console.log('state next')
       console.log(state);
       return (
         <Fragment key={index}>
@@ -46,7 +47,7 @@ const Parking = () => {
               <div className='cool-catalog-container'>
                 <div className='catalog-item-img'>
                   <img
-                    src={`https://diagnost2k.ru/${state.data[index].preview}`}
+                    src={`/${state.data[index].preview}`}
                     alt=''
                   />
                 </div>

@@ -20,6 +20,8 @@ app.use(function (req, res, next) {
 });
 
 //app.use(express.static(__dirname + '/html'));
+// serve translation/{ru|en|cz}.json
+app.use('/translation/', express.static(__dirname + '/translation'));
 
 connectDB();
 // addUser('admin', '123456');

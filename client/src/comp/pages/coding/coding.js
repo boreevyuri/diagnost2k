@@ -36,7 +36,7 @@ const Coding = () => {
               <div className='cool-catalog-container'>
                 <div className='catalog-item-img'>
                   <img
-                    src={`https://diagnost2k.ru/${state.data[index].preview}`}
+                    src={`/${state.data[index].preview}`}
                     alt=''
                   />
                 </div>

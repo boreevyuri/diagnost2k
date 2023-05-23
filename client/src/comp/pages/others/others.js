@@ -21,7 +21,7 @@ const Others = (props) => {
   }, []);
 
   const getContent = async () => {
-    let res = await axios.get(`https://diagnost2k.ru/others`);
+    let res = await axios.get(`/others`);
 
     console.log(res);
     setState({ ...state, data: res.data, loaded: true });
@@ -37,7 +37,7 @@ const Others = (props) => {
               <div className='cool-catalog-container'>
                 <div className='catalog-item-img'>
                   <img
-                    src={`https://diagnost2k.ru${item.Image[0].url}`}
+                    src={`${item.Image[0].url}`}
                     alt=''
                   />
                 </div>

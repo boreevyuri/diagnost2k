@@ -52,23 +52,23 @@ const App = () => {
                 <Menu/>
                 <section>
                     <Routes>
-                        <Route exact path='/' element={<Firstpage/>}/>
-                        <Route path='/diagnostika' element={<Diagnostika/>}/>
+                        <Route path='/' element={<Firstpage/>}/>
+                        <Route path='/diagnostika/*' element={<Diagnostika/>}/>
                         <Route path='/service/:name/:id' element={<ServicePage/>}/>
                         <Route path='/carpage/:mark/:id' element={<CarPage/>}/>
-                        <Route path='/tuning' element={<Tuning/>}/>
-                        <Route path='/file-service' element={<Repair/>}/>
-                        <Route path='/navigation' element={<Navigation/>}/>
-                        <Route path='/support' element={<Support/>}/>
-                        <Route path='/coding' element={<Coding/>}/>
-                        <Route path='/smartphone' element={<Smartphone/>}/>
-                        <Route path='/autopick' element={<AutoPick/>}/>
-                        <Route path='/contacts' element={<Contacts/>}/>
-                        <Route path='/other' element={<Others/>}/>
-                        <Route path='/parking' element={<Parking/>}/>
-                        <Route path='/bmw-key' element={<Bmwkey/>}/>
-                        <Route path='/displays' element={<Display/>}/>
-                        <Route path='/blog' element={<Blog/>}/>
+                        <Route path='/tuning/*' element={<Tuning/>}/>
+                        <Route path='/file-service/*' element={<Repair/>}/>
+                        <Route path='/navigation/*' element={<Navigation/>}/>
+                        <Route path='/support/*' element={<Support/>}/>
+                        <Route path='/coding/*' element={<Coding/>}/>
+                        <Route path='/smartphone/*' element={<Smartphone/>}/>
+                        <Route path='/autopick/*' element={<AutoPick/>}/>
+                        <Route path='/contacts/*' element={<Contacts/>}/>
+                        <Route path='/other/*' element={<Others/>}/>
+                        <Route path='/parking/*' element={<Parking/>}/>
+                        <Route path='/bmw-key/*' element={<Bmwkey/>}/>
+                        <Route path='/displays/*' element={<Display/>}/>
+                        <Route path='/blog/*' element={<Blog/>}/>
                         <Route path='/post/:id' element={<Post/>}/>
                         <Route path='/service/:id' element={<CatalogItemPage/>}/>
                     </Routes>

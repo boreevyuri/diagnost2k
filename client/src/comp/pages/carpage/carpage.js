@@ -145,7 +145,7 @@ const CarPage = (props) => {
                         {state.imgUrl ? (
                           <Fragment>
                             <img
-                              src={`https://diagnost2k.ru/server-${state.imgUrl}`}
+                              src={`/server-${state.imgUrl}`}
                               alt=''
                             />
                           </Fragment>
@@ -183,7 +183,7 @@ const CarPage = (props) => {
                       {state.chartPower ? (
                         <Fragment>
                           <img
-                            src={`https://diagnost2k.ru/server-${state.chartPower}`}
+                            src={`/server-${state.chartPower}`}
                             alt=''
                           />
                         </Fragment>
@@ -204,7 +204,7 @@ const CarPage = (props) => {
                         {state.chartTorque ? (
                           <Fragment>
                             <img
-                              src={`https://diagnost2k.ru/server-${state.chartTorque}`}
+                              src={`/server-${state.chartTorque}`}
                               alt=''
                             />
                           </Fragment>

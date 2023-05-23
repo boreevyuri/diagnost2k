@@ -145,7 +145,7 @@ const ServicePage = (props) => {
         <Fragment>
           {item.type == 'img' ? (
             <Fragment>
-              <img src={`https://diagnost2k.ru/${item.value}`} alt='' />
+              <img src={`/${item.value}`} alt='' />
             </Fragment>
           ) : (
             <Fragment></Fragment>
@@ -185,7 +185,7 @@ const ServicePage = (props) => {
                     ) : (
                       <Fragment>
                         <img
-                          src={`https://diagnost2k.ru/${state.data.preview}`}
+                          src={`/${state.data.preview}`}
                           alt=''
                         />
                         {renderImg()}

@@ -15,7 +15,7 @@ const Blog = () => {
   const page = 'blog';
 
   const getPosts = async () => {
-    let res = await axios.get(`https://diagnost2k.ru/posts`);
+    let res = await axios.get(`/posts`);
     if (res.data.length > 0) {
       setState({
         ...state,
@@ -42,7 +42,7 @@ const Blog = () => {
           <div className='article'>
             <Link to={`/post/${item.slug}`}>
               <div className='article-container'>
-                <img src={`https://diagnost2k.ru${item.Preview.url}`} alt='' />
+                <img src={`${item.Preview.url}`} alt='' />
                 <div className='article-title'>{item.Name}</div>
                 <div className='fader-common blog-fader'></div>
               </div>
