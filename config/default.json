@@ -1,4 +1,4 @@
 {
-	"mongoURI": "mongodb+srv://admin:bpMRu8PwKcZqhpFN@idontcare-iqe5t.mongodb.net/test?retryWrites=true&w=majority",
+	"mongoURI": "mongodb://myTester:password@127.0.0.1/testdb?retryWrites=true&w=majority",
 	"jwtSecret": "secretTocken"
 }

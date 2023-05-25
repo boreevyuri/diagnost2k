@@ -22,16 +22,18 @@ const Support = () => {
         <div className='mask'>
           <div className='text-container'>
             <Routes>
-              <Route exact path={`/support`}>
-                <div className='cool-fs-title'>
-                  <Link to={`/`}>
-                    <div className='catalog-back-trigger common-back'>
-                      <img src={arrow} alt='' />
-                    </div>
-                  </Link>
-                  {t(`Navbar.3`)}
-                </div>
-              </Route>
+              <Route path={`/support`} element={
+                <>
+                  <div className='cool-fs-title'>
+                    <Link to={`/`}>
+                      <div className='catalog-back-trigger common-back'>
+                        <img src={arrow} alt='' />
+                      </div>
+                    </Link>
+                    {t(`Navbar.3`)}
+                  </div>
+                </>
+              } />
             </Routes>
           </div>
         </div>

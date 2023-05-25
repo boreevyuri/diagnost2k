@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 import phoneIcon from './img/phone.svg';
 import envelope from './img/envelope.svg';
 import $ from 'jquery';
-import fb from './img/fb.svg';
-import whatsapp from './img/whatsapp.svg';
-import instagram from './img/instagram.svg';
-import youtube from './img/youtube.svg';
 import axios from 'axios';
+import Socials from "../socials/socials";
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
@@ -56,21 +53,7 @@ const Footer = () => {
           {t('Contacts.Email')}
         </div>
         <div className='contact-item social-media-footer'>
-          <a href='https://wa.me/420774508743' target='_blank'>
-            <img className='box-hover' src={whatsapp} />
-          </a>
-          <a href='https://www.facebook.com/diagnost2k/' target='_blank'>
-            <img className='box-hover' src={fb} />
-          </a>
-          <a
-            href='https://www.youtube.com/channel/UC3Z7zI8e_XEiZ6SNfw1qdTA'
-            target='_blank'
-          >
-            <img className='box-hover' src={youtube} />
-          </a>
-          <a href='https://www.instagram.com/diagnost2k' target='_blank'>
-            <img className='box-hover' src={instagram} />
-          </a>
+          <Socials />
         </div>
       </div>
       <div className='form'>

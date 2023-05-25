@@ -15,7 +15,7 @@ const Contacts = () => {
         <div className='mask'>
           <div className='text-container'>
             <Routes>
-              <Route exact path={`/contacts`}>
+              <Route path={`/contacts`} element={
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
                     <div className='catalog-back-trigger common-back'>
@@ -24,7 +24,7 @@ const Contacts = () => {
                   </Link>
                   {t(`Navbar.1`)}
                 </div>
-              </Route>
+              } />
             </Routes>
           </div>
         </div>
@@ -37,27 +37,27 @@ const Contacts = () => {
     <div className='support'>
       {firstscreenRender()}
       <div className='main-wrapper'>
-        <div className='three-row'>
-          <div className='contact-col'>
-            <div className='cont-col-title'>
-              Czech republic <br />
-              Prague
-            </div>
-            <li>Diagnost2k s.r.o</li>
-            <li>Phone: +420 774 508 743</li>
-            <li>PSČ: 254 01</li>
-            <li>Adres: Ke Slunci 395, Jílové u Prahy</li>
-            <li>IČO: 09585648</li>
-          </div>
-        </div>
+        {/*<div className='three-row'>*/}
+        {/*  <div className='contact-col'>*/}
+        {/*    <div className='cont-col-title'>*/}
+        {/*      Czech republic <br />*/}
+        {/*      Prague*/}
+        {/*    </div>*/}
+        {/*    <li>Diagnost2k s.r.o</li>*/}
+        {/*    <li>Phone: +420 774 508 743</li>*/}
+        {/*    <li>PSČ: 254 01</li>*/}
+        {/*    <li>Adres: Ke Slunci 395, Jílové u Prahy</li>*/}
+        {/*    <li>IČO: 09585648</li>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
         <div className='three-row'>
           <div className='contact-col'>
             <div className='cont-col-title'>
               Россия, Санкт-Петербург
             </div>
             <li>Address: ул. Варшавская д.9 корпус 1</li>
-            <li>Phone: +79214232171</li>
-            <li>Email: dodon83@mail.ru</li>
+            <li>Phone: +7 (921) 423 21 71</li>
+            <li>Email: info@diagnost2k.bizml.ru</li>
           </div>
         </div>
         <div className='three-row'>

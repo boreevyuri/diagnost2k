@@ -2,10 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Auth from '../profile/auth';
 import logo from './img/logo.svg';
-import fb from './img/fb.svg';
-import whatsapp from './img/whatsapp.svg';
-import instagram from './img/instagram.svg';
-import youtube from './img/youtube.svg';
+import Socials from "../socials/socials";
 import $ from 'jquery';
 import Alert from '../alert';
 import { useTranslation } from 'react-i18next';
@@ -43,29 +40,12 @@ const NavBar = (props) => {
           <div className='navbar-auth'>
             <Auth />
           </div>
-          <div className='social-media'>
-            <a href='https://wa.me/420774508743' target='_blank'>
-              <img className='box-hover' src={whatsapp} />
-            </a>
-            <a href='https://www.facebook.com/diagnost2k/' target='_blank'>
-              <img className='box-hover' src={fb} />
-            </a>
-            <a
-              href='https://www.youtube.com/channel/UC3Z7zI8e_XEiZ6SNfw1qdTA'
-              target='_blank'
-            >
-              <img className='box-hover' src={youtube} />
-            </a>
-            <a href='https://www.instagram.com/diagnost2k' target='_blank'>
-              <img className='box-hover' src={instagram} />
-            </a>
-          </div>
           <div className='navbar-language'>
             <div
-              onClick={() => changeLanguage(1, 'cz')}
-              className='language-item active li-1 box-hover'
+                onClick={() => changeLanguage(3, 'ru')}
+                className='language-item active li-3 box-hover'
             >
-              CZ
+              RU
             </div>
             <div
               onClick={() => changeLanguage(2, 'en')}
@@ -74,11 +54,14 @@ const NavBar = (props) => {
               EN
             </div>
             <div
-              onClick={() => changeLanguage(3, 'ru')}
-              className='language-item li-3 box-hover'
+                onClick={() => changeLanguage(1, 'cz')}
+                className='language-item li-1 box-hover'
             >
-              RU
+              CZ
             </div>
+          </div>
+          <div className='social-media'>
+            <Socials />
           </div>
           <div className='navigation'>
             <Link to='/contacts'>
@@ -97,28 +80,14 @@ const NavBar = (props) => {
         </div>
         <div className='navbar-contacts-mobile'>
           <div className='social-media-mobile'>
-            <a href='https://wa.me/420774508743' target='_blank'>
-              <img className='box-hover' src={whatsapp} />
-            </a>
-            <a href='https://www.facebook.com/diagnost2k/' target='_blank'>
-              <img className='box-hover' src={fb} />
-            </a>
-            <a
-              href='https://www.youtube.com/channel/UC3Z7zI8e_XEiZ6SNfw1qdTA'
-              target='_blank'
-            >
-              <img className='box-hover' src={youtube} />
-            </a>
-            <a href='https://www.instagram.com/diagnost2k' target='_blank'>
-              <img className='box-hover' src={instagram} />
-            </a>
+            < Socials />
           </div>
           <div className='navbar-language-mobile'>
             <div
-              onClick={() => changeLanguage(1, 'cz')}
-              className='language-item-mobile active li-1'
+                onClick={() => changeLanguage(3, 'ru')}
+                className='language-item-mobile active li-3'
             >
-              CZ
+              RU
             </div>
             <div
               onClick={() => changeLanguage(2, 'en')}
@@ -127,10 +96,10 @@ const NavBar = (props) => {
               EN
             </div>
             <div
-              onClick={() => changeLanguage(3, 'ru')}
-              className='language-item-mobile li-3'
+                onClick={() => changeLanguage(1, 'cz')}
+                className='language-item-mobile li-1'
             >
-              RU
+              CZ
             </div>
           </div>
           <div onClick={() => closeMenu()} className='navigation-mobile'>

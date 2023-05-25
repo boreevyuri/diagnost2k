@@ -17,7 +17,10 @@
     "2": { "1": "Russian federation", "2": "Moscow" },
     "3": { "1": "United States of America", "2": "California" }
   },
-  "Contacts": { "Phone": "+420 774 508 743", "Email": "info@diagnost2k.cz" },
+  "Contacts": {
+    "Phone": "+7 (921) 423 21-71",
+    "Email": "info@diagnost2k.bizml.ru"
+  },
   "Footer": { "FormTitle": "White us" },
   "Form": {
     "Choose": "Select communication method",
@@ -26,7 +29,7 @@
     "Continue": "Continue",
     "Error": "Please fill in all fields",
     "Service": "Service:",
-    "Quastion": "Write your question",
+    "Question": "Write your question",
     "Send": "Send",
     "Thank": "Thank you",
     "Thank2": "Our managers will contact you shortly"

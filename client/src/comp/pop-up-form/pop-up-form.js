@@ -150,7 +150,7 @@ const PopUpForm = (props) => {
         </div>
         <div className='pop-up-form puf-2'>
           <div className='input-container'>
-            <div className='label'>{t('Form.Quastion')}</div>
+            <div className='label'>{t('Form.Question')}</div>
             <textarea
               onChange={(e) => onChange(e)}
               value={text}

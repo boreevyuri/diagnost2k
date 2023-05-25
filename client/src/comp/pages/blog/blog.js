@@ -61,7 +61,7 @@ const Blog = () => {
         <div className='mask'>
           <div className='text-container'>
             <Routes>
-              <Route exact path={`/blog`}>
+              <Route exact path={`/blog`} element={
                 <div className='cool-fs-title'>
                   <Link to={`/`}>
                     <div className='catalog-back-trigger common-back'>
@@ -70,7 +70,7 @@ const Blog = () => {
                   </Link>
                   {t(`Navbar.2`)}
                 </div>
-              </Route>
+              } />
             </Routes>
           </div>
         </div>

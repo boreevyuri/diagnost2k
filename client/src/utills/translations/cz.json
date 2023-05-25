@@ -12,7 +12,10 @@
     "9": "Kódování",
     "10": "File service"
   },
-  "Contacts": { "Phone": "+420 774 508 743", "Email": "info@diagnost2k.cz" },
+  "Contacts": {
+    "Phone": "+7 (921) 423 21-71",
+    "Email": "info@diagnost2k.bizml.ru"
+  },
   "ContactsPage": {
     "1": { "1": "Ruská federace", "2": "Petrohrad" },
     "2": { "1": "Ruská federace", "2": "Moskva" },
@@ -26,7 +29,7 @@
     "Continue": "Pokračovat",
     "Error": "Vyplňte prosím všechna pole",
     "Service": "Služba:",
-    "Quastion": "Napište svou otázku",
+    "Question": "Napište svou otázku",
     "Send": "Odeslat",
     "Thank": "Děkuji za zpětnou vazbu",
     "Thank2": "Naši manažeři vás brzy kontaktují"

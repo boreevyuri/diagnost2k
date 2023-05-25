@@ -41,4 +41,8 @@ app.get('/', async (req, res) => {
   res.send('How are you doing?');
 });
 
+app.get('/*', async (req, res) => {
+  res.send([]);
+});
+
 server.listen(PORT, () => console.log(`Server started on port ${PORT}`));
