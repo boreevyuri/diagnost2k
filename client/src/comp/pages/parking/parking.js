@@ -72,14 +72,16 @@ const Parking = () => {
           <div className='text-container'>
             <Routes>
               <Route exact path={`/parking`} element={
-                <div className='cool-fs-title'>
-                  <Link to={`/`}>
-                    <div className='catalog-back-trigger common-back'>
-                      <img src={arrow} alt=''/>
-                    </div>
-                  </Link>
-                  {t(`Parking.Title`)}
-                </div>
+                <>
+                  <div className='cool-fs-title'>
+                    <Link to={`/`}>
+                      <div className='catalog-back-trigger common-back'>
+                        <img src={arrow} alt=''/>
+                      </div>
+                    </Link>
+                    {t(`Parking.Title`)}
+                  </div>
+                </>
               } />
           </Routes>
         </div>

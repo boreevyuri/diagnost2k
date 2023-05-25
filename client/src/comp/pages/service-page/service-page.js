@@ -128,9 +128,11 @@ const ServicePage = (props) => {
         <div className='mask'>
           <div className='text-container'>
             <Routes>
-              <Route path={`/${page}`}>
-                <div className='cool-fs-title'></div>
-              </Route>
+              <Route path={`/${page}`} element={
+                <>
+                  <div className='cool-fs-title'></div>
+                </>
+              } />
             </Routes>
           </div>
         </div>

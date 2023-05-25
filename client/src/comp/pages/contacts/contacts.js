@@ -16,14 +16,16 @@ const Contacts = () => {
           <div className='text-container'>
             <Routes>
               <Route path={`/contacts`} element={
-                <div className='cool-fs-title'>
-                  <Link to={`/`}>
-                    <div className='catalog-back-trigger common-back'>
-                      <img src={arrow} alt='' />
-                    </div>
-                  </Link>
-                  {t(`Navbar.1`)}
-                </div>
+                <>
+                  <div className='cool-fs-title'>
+                    <Link to={`/`}>
+                      <div className='catalog-back-trigger common-back'>
+                        <img src={arrow} alt='' />
+                      </div>
+                    </Link>
+                    {t(`Navbar.1`)}
+                  </div>
+                </>
               } />
             </Routes>
           </div>

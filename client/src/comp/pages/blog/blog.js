@@ -62,14 +62,16 @@ const Blog = () => {
           <div className='text-container'>
             <Routes>
               <Route exact path={`/blog`} element={
-                <div className='cool-fs-title'>
-                  <Link to={`/`}>
-                    <div className='catalog-back-trigger common-back'>
-                      <img src={arrow} alt='' />
-                    </div>
-                  </Link>
-                  {t(`Navbar.2`)}
-                </div>
+                <>
+                  <div className='cool-fs-title'>
+                    <Link to={`/`}>
+                      <div className='catalog-back-trigger common-back'>
+                        <img src={arrow} alt='' />
+                      </div>
+                    </Link>
+                    {t(`Navbar.2`)}
+                  </div>
+                </>
               } />
             </Routes>
           </div>

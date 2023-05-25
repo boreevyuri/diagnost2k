@@ -62,14 +62,16 @@ const Others = (props) => {
           <div className='text-container'>
             <Routes>
               <Route exact path={`/other`} element={
-                <div className='cool-fs-title'>
-                  <Link to={`/`}>
-                    <div className='catalog-back-trigger common-back'>
-                      <img src={arrow} alt='' />
-                    </div>
-                  </Link>
-                  {t(`Others.Title`)}
-                </div>
+                <>
+                  <div className='cool-fs-title'>
+                    <Link to={`/`}>
+                      <div className='catalog-back-trigger common-back'>
+                        <img src={arrow} alt='' />
+                      </div>
+                    </Link>
+                    {t(`Others.Title`)}
+                  </div>
+                </>
               } />
             </Routes>
           </div>

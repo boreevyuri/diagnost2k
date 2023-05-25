@@ -16,14 +16,16 @@ const AutoPick = () => {
           <div className='text-container'>
             <Routes>
               <Route exact path={`/autopick`} element={
-                <div className='cool-fs-title'>
-                  <Link to={`/`}>
-                    <div className='catalog-back-trigger common-back'>
-                      <img src={arrow} alt='' />
-                    </div>
-                  </Link>
-                  {t(`Menu.7`)}
-                </div>
+                <>
+                  <div className='cool-fs-title'>
+                    <Link to={`/`}>
+                      <div className='catalog-back-trigger common-back'>
+                        <img src={arrow} alt='' />
+                      </div>
+                    </Link>
+                    {t(`Menu.7`)}
+                  </div>
+                </>
               } />
             </Routes>
           </div>

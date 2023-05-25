@@ -16,14 +16,16 @@ const Repair = () => {
           <div className='text-container'>
             <Routes>
               <Route exact path={`/file-service`} element={
-                <div className='cool-fs-title'>
-                  <Link to={`/`}>
-                    <div className='catalog-back-trigger common-back'>
-                      <img src={arrow} alt='' />
-                    </div>
-                  </Link>
-                  {t(`Menu.10`)}
-                </div>
+                <>
+                  <div className='cool-fs-title'>
+                    <Link to={`/`}>
+                      <div className='catalog-back-trigger common-back'>
+                        <img src={arrow} alt='' />
+                      </div>
+                    </Link>
+                    {t(`Menu.10`)}
+                  </div>
+                </>
               } />
             </Routes>
           </div>

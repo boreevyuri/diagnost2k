@@ -73,18 +73,18 @@ const Smartphone = () => {
         <div className='mask'>
           <div className='text-container'>
             <Routes>
-              <Route exact path={`/smartphone`}
-                     element={
-                       <div className='cool-fs-title'>
-                         <Link to={`/`}>
-                           <div className='catalog-back-trigger common-back'>
-                             <img src={arrow} alt=''/>
-                           </div>
-                         </Link>
-                         {t(`Smartphone.Title`)}
-                       </div>
-                     }
-              />
+              <Route exact path={`/smartphone`} element={
+                <>
+                  <div className='cool-fs-title'>
+                    <Link to={`/`}>
+                      <div className='catalog-back-trigger common-back'>
+                        <img src={arrow} alt=''/>
+                      </div>
+                    </Link>
+                    {t(`Smartphone.Title`)}
+                  </div>
+                </>
+              } />
             </Routes>
           </div>
         </div>

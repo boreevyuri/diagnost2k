@@ -72,14 +72,16 @@ const Navigation = () => {
           <div className='text-container'>
             <Routes>
               <Route exact path={`/${page}`} element={
-                <div className='cool-fs-title'>
-                  <Link to={`/`}>
-                    <div className='catalog-back-trigger common-back'>
-                      <img src={arrow} alt=''/>
-                    </div>
-                  </Link>
-                  {t(`Navigation.Title`)}
-                </div>
+                <>
+                  <div className='cool-fs-title'>
+                    <Link to={`/`}>
+                      <div className='catalog-back-trigger common-back'>
+                        <img src={arrow} alt=''/>
+                      </div>
+                    </Link>
+                    {t(`Navigation.Title`)}
+                  </div>
+                </>
               } />
             </Routes>
           </div>

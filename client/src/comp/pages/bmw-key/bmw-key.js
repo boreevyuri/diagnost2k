@@ -30,14 +30,16 @@ const Bmwkey = () => {
           <div className='text-container'>
             <Routes>
               <Route exact path={`/bmw-key`}>
-                <div className='cool-fs-title'>
-                  <Link to={`/others`}>
-                    <div className='catalog-back-trigger common-back'>
-                      <img src={arrow} alt='' />
-                    </div>
-                  </Link>
-                  {t(`Bmwkey.Title`)}
-                </div>
+                <>
+                  <div className='cool-fs-title'>
+                    <Link to={`/others`}>
+                      <div className='catalog-back-trigger common-back'>
+                        <img src={arrow} alt='' />
+                      </div>
+                    </Link>
+                    {t(`Bmwkey.Title`)}
+                  </div>
+                </>
               </Route>
             </Routes>
           </div>

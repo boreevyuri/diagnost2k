@@ -62,18 +62,18 @@ const Coding = () => {
         <div className='mask'>
           <div className='text-container'>
             <Routes>
-              <Route exact path={`/${page}`}
-                     element={
-                       <div className='cool-fs-title'>
-                         <Link to={`/`}>
-                           <div className='catalog-back-trigger common-back'>
-                             <img src={arrow} alt=''/>
-                           </div>
-                         </Link>
-                         {t(`Coding.Title`)}
-                       </div>
-                     }
-              />
+              <Route exact path={`/${page}`} element={
+                <>
+                  <div className='cool-fs-title'>
+                    <Link to={`/`}>
+                      <div className='catalog-back-trigger common-back'>
+                        <img src={arrow} alt=''/>
+                      </div>
+                    </Link>
+                    {t(`Coding.Title`)}
+                  </div>
+                </>
+              } />
             </Routes>
           </div>
         </div>

@@ -68,14 +68,16 @@ const Display = () => {
           <div className='text-container'>
             <Routes>
               <Route exact path={`/displays`} element={
-                <div className='cool-fs-title'>
-                  <Link to={`/`}>
-                    <div className='catalog-back-trigger common-back'>
-                      <img src={arrow} alt='' />
-                    </div>
-                  </Link>
-                  {t(`Displays.Title`)}
-                </div>
+                <>
+                  <div className='cool-fs-title'>
+                    <Link to={`/`}>
+                      <div className='catalog-back-trigger common-back'>
+                        <img src={arrow} alt='' />
+                      </div>
+                    </Link>
+                    {t(`Displays.Title`)}
+                  </div>
+                </>
               } />
             </Routes>
           </div>
