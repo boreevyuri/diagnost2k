@@ -1,20 +1,20 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import Footer from '../../footer/footer';
-import { Route, Routes } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
-import arrow from './img/arrow.svg';
 import { Link } from 'react-router-dom';
 import bmwkey from './img/bmw-key.jpg';
 import PopUpForm from '../../pop-up-form/pop-up-form';
+import FirstScreenRenderer from "../../elements/first-screen-renderer";
 
-const Others = (props) => {
+const Others = () => {
   const [state, setState] = useState({
     service_name: '',
     loaded: false,
   });
 
   const page = 'other';
+  const backArrowTitle = 'Others.Title';
 
   useEffect(() => {
     getContent(page);
@@ -54,38 +54,11 @@ const Others = (props) => {
 
   const { t } = useTranslation();
 
-  const firstscreenRender = () => {
-    let fsName = 'firstscreen-common fs-common-' + page;
-    return (
-      <div className={fsName}>
-        <div className='mask'>
-          <div className='text-container'>
-            <Routes>
-              <Route exact path={`/other`} element={
-                <>
-                  <div className='cool-fs-title'>
-                    <Link to={`/`}>
-                      <div className='catalog-back-trigger common-back'>
-                        <img src={arrow} alt='' />
-                      </div>
-                    </Link>
-                    {t(`Others.Title`)}
-                  </div>
-                </>
-              } />
-            </Routes>
-          </div>
-        </div>
-        <div className='fader-common'></div>
-      </div>
-    );
-  };
-
   return (
     <div className='coding'>
       <PopUpForm service_name={state.service_name} />
       <div className='blur'>
-        {firstscreenRender()}
+        <FirstScreenRenderer page={page} title={backArrowTitle} />
         <div className='main-wrapper'>
           <section>
             <Link to='/bmw-key'>

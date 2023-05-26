@@ -2,7 +2,6 @@ import React, {useState, useEffect, Fragment} from 'react';
 import Footer from '../../footer/footer';
 import {Route, Routes} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import arrow from './img/arrow.svg';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 import Catalog from './pages/catalog.js';
@@ -14,6 +13,7 @@ import nav3 from './img/catalog-item-3.jpg';
 import nav4 from './img/catalog-item-4.jpg';
 import nav5 from './img/catalog-item-5.jpg';
 import nav6 from './img/catalog-item-6.jpg';
+import FirstScreenRenderer from "../../elements/first-screen-renderer";
 
 const Navigation = () => {
   const [state, setState] = useState({
@@ -26,15 +26,16 @@ const Navigation = () => {
   };
 
   const page = 'navigation';
+  const backArrowTitle = 'Navigation.Title';
 
   useEffect(() => {
+    const getContent = async (category) => {
+      let res = await axios.get(`/api/content/${category}`);
+      setState({...state, data: res.data, loaded: true});
+    };
     getContent(page);
-  }, []);
+  }, [state]);
 
-  const getContent = async (category) => {
-    let res = await axios.get(`/api/content/${category}`);
-    setState({...state, data: res.data, loaded: true});
-  };
 
   const renderContent = () => {
     return state.data.map((item, index) => {
@@ -64,38 +65,11 @@ const Navigation = () => {
 
   const {t} = useTranslation();
 
-  const firstscreenRender = () => {
-    let fsName = 'firstscreen-common fs-common-' + page;
-    return (
-      <div className={fsName}>
-        <div className='mask'>
-          <div className='text-container'>
-            <Routes>
-              <Route exact path={`/${page}`} element={
-                <>
-                  <div className='cool-fs-title'>
-                    <Link to={`/`}>
-                      <div className='catalog-back-trigger common-back'>
-                        <img src={arrow} alt=''/>
-                      </div>
-                    </Link>
-                    {t(`Navigation.Title`)}
-                  </div>
-                </>
-              } />
-            </Routes>
-          </div>
-        </div>
-        <div className='fader-common'></div>
-      </div>
-    );
-  };
-
   return (
     <div className='navigation'>
       <PopUpForm service_name={state.service_name}/>
       <div className='blur'>
-        {firstscreenRender()}
+        <FirstScreenRenderer page={page} title={backArrowTitle} />
         <div className='main-wrapper'>
           <Fragment>
             {state.loaded ? (
@@ -106,8 +80,8 @@ const Navigation = () => {
           </Fragment>
           <section>
             <Routes>
-              <Route exact path='/navigation' element={<Catalog />} />
-              <Route path='/navigation/nav-update2020' element={
+              <Route path='/' element={<Catalog />} />
+              <Route path='/nav-update2020' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav1}
@@ -116,7 +90,7 @@ const Navigation = () => {
                   description={t('Navigation.CatalogItem.1.Description')}
                 />
               } />
-              <Route path='/navigation/nbt-evo-id5-id6' element={
+              <Route path='/nbt-evo-id5-id6' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav2}
@@ -125,7 +99,7 @@ const Navigation = () => {
                   description={t('Navigation.CatalogItem.2.Description')}
                 />
               } />
-              <Route path='/navigation/cic-nav-system' element={
+              <Route path='/cic-nav-system' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav3}
@@ -134,7 +108,7 @@ const Navigation = () => {
                   description={t('Navigation.CatalogItem.3.Description')}
                 />
               } />
-            <Route path='/navigation/speed-limit' element={
+            <Route path='/speed-limit' element={
               <CatalogItem
                 setData={setDataFromProps}
                 img={nav4}
@@ -143,7 +117,7 @@ const Navigation = () => {
                 description={t('Navigation.CatalogItem.4.Description')}
               />
             } />
-            <Route path='/navigation/nbt-evo-id4' element={
+            <Route path='/nbt-evo-id4' element={
               <CatalogItem
                 setData={setDataFromProps}
                 img={nav5}
@@ -152,7 +126,7 @@ const Navigation = () => {
                 description={t('Navigation.CatalogItem.5.Description')}
               />
             } />
-            <Route path='/navigation/idrive-touch-controller' element={
+            <Route path='/idrive-touch-controller' element={
               <CatalogItem
                 setData={setDataFromProps}
                 img={nav6}

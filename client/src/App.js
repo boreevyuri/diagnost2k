@@ -1,7 +1,5 @@
 import React, {useEffect} from 'react';
 import {Route, Routes} from 'react-router-dom';
-// import ScrollToTop from 'react-router-scroll-top';
-// import './styles/style.css';
 import './styles/style.sass';
 import NavBar from './comp/navbar/navbar';
 import {Provider} from 'react-redux';
@@ -29,6 +27,8 @@ import Post from './comp/pages/blog/comp/post';
 import Others from './comp/pages/others/others';
 import CatalogItemPage from './comp/pages/others/pages/catalog-item-page.js';
 import ServicePage from './comp/pages/service-page/service-page.js';
+// import ScrollToTop from 'react-router-scroll-top';
+// import './styles/style.css';
 
 if (localStorage.token) {
     setAuthToken(localStorage.token);
@@ -39,7 +39,7 @@ const App = () => {
         i18n.changeLanguage(lang);
     };
 
-    const {t, i18n} = useTranslation();
+    const {i18n} = useTranslation();
 
     useEffect(() => {
         store.dispatch(loadUser());
@@ -52,25 +52,27 @@ const App = () => {
                 <Menu/>
                 <section>
                     <Routes>
-                        <Route path='/' element={<Firstpage/>}/>
-                        <Route path='/diagnostika/*' element={<Diagnostika/>}/>
-                        <Route path='/service/:name/:id' element={<ServicePage/>}/>
-                        <Route path='/carpage/:mark/:id' element={<CarPage/>}/>
-                        <Route path='/tuning/*' element={<Tuning/>}/>
-                        <Route path='/file-service/*' element={<Repair/>}/>
-                        <Route path='/navigation/*' element={<Navigation/>}/>
-                        <Route path='/support/*' element={<Support/>}/>
-                        <Route path='/coding/*' element={<Coding/>}/>
-                        <Route path='/smartphone/*' element={<Smartphone/>}/>
-                        <Route path='/autopick/*' element={<AutoPick/>}/>
-                        <Route path='/contacts/*' element={<Contacts/>}/>
-                        <Route path='/other/*' element={<Others/>}/>
-                        <Route path='/parking/*' element={<Parking/>}/>
-                        <Route path='/bmw-key/*' element={<Bmwkey/>}/>
-                        <Route path='/displays/*' element={<Display/>}/>
-                        <Route path='/blog/*' element={<Blog/>}/>
-                        <Route path='/post/:id' element={<Post/>}/>
-                        <Route path='/service/:id' element={<CatalogItemPage/>}/>
+                        <Route path={'/'}>
+                            <Route index element={<Firstpage/>}/>
+                            <Route path='diagnostika/*' element={<Diagnostika/>}/>
+                            <Route path='service/:name/:id' element={<ServicePage/>}/>
+                            <Route path='carpage/:mark/:id' element={<CarPage/>}/>
+                            <Route path='tuning/*' element={<Tuning/>}/>
+                            <Route path='file-service/*' element={<Repair/>}/>
+                            <Route path='navigation/*' element={<Navigation/>}/>
+                            <Route path='support/*' element={<Support/>}/>
+                            <Route path='coding/*' element={<Coding/>}/>
+                            <Route path='smartphone/*' element={<Smartphone/>}/>
+                            <Route path='autopick/*' element={<AutoPick/>}/>
+                            <Route path='contacts/*' element={<Contacts/>}/>
+                            <Route path='other/*' element={<Others/>}/>
+                            <Route path='parking/*' element={<Parking/>}/>
+                            <Route path='bmw-key/*' element={<Bmwkey/>}/>
+                            <Route path='displays/*' element={<Display/>}/>
+                            <Route path='blog/*' element={<Blog/>}/>
+                            <Route path='post/:id' element={<Post/>}/>
+                            <Route path='service/:id' element={<CatalogItemPage/>}/>
+                        </Route>
                     </Routes>
                 </section>
             </div>

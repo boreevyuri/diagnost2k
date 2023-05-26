@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import key from './img/screen-key.png';
-import { Route, Routes } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import $ from 'jquery';
-import arrow from './img/arrow.svg';
-import { Link } from 'react-router-dom';
 import PopUpForm from '../../pop-up-form/pop-up-form';
+import FirstScreenRenderer from "../../elements/first-screen-renderer";
 
 const Bmwkey = () => {
   const { t } = useTranslation();
@@ -15,6 +13,7 @@ const Bmwkey = () => {
   });
 
   const page = 'bmwkey';
+  const backArrowTitle = 'BmwKey.Title'
 
   const popUpHandle = (name) => {
     $('.blur').addClass('active');
@@ -22,37 +21,10 @@ const Bmwkey = () => {
     setState({ ...state, service_name: name });
   };
 
-  const firstscreenRender = () => {
-    let fsName = 'firstscreen-common fs-common-' + page;
-    return (
-      <div className={fsName}>
-        <div className='mask'>
-          <div className='text-container'>
-            <Routes>
-              <Route exact path={`/bmw-key`}>
-                <>
-                  <div className='cool-fs-title'>
-                    <Link to={`/others`}>
-                      <div className='catalog-back-trigger common-back'>
-                        <img src={arrow} alt='' />
-                      </div>
-                    </Link>
-                    {t(`Bmwkey.Title`)}
-                  </div>
-                </>
-              </Route>
-            </Routes>
-          </div>
-        </div>
-        <div className='fader-common'></div>
-      </div>
-    );
-  };
-
   return (
     <div className='bmw-key'>
       <PopUpForm service_name={state.service_name} />
-      {firstscreenRender()}
+      <FirstScreenRenderer page={page} title={backArrowTitle} />
       <div className='main-wrapper'>
         <div className='common-text-container'>
           <div className='common-text-col'>

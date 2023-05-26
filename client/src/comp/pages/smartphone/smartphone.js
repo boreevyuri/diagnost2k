@@ -2,7 +2,6 @@ import React, {useState, useEffect, Fragment} from 'react';
 import Footer from '../../footer/footer';
 import {Route, Routes} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import arrow from './img/arrow.svg';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 import Catalog from './pages/catalog.js';
@@ -17,6 +16,7 @@ import nav6 from './img/catalog-item-6.jpg';
 import nav7 from './img/catalog-item-7.jpg';
 import nav8 from './img/catalog-item-8.jpg';
 import nav9 from './img/catalog-item-9.jpg';
+import FirstScreenRenderer from "../../elements/first-screen-renderer";
 
 const Smartphone = () => {
   const [state, setState] = useState({
@@ -29,15 +29,16 @@ const Smartphone = () => {
   };
 
   const page = 'multimedia';
+  const backArrowTitle = 'Smartphone.Title';
 
   useEffect(() => {
-    getContent(page);
-  }, []);
+    const getContent = async (category) => {
+      let res = await axios.get(`/api/content/${category}`);
+      setState({...state, data: res.data, loaded: true});
+    };
 
-  const getContent = async (category) => {
-    let res = await axios.get(`/api/content/${category}`);
-    setState({...state, data: res.data, loaded: true});
-  };
+    getContent(page);
+  }, [state]);
 
   const renderContent = () => {
     return state.data.map((item, index) => {
@@ -66,38 +67,11 @@ const Smartphone = () => {
 
   const {t} = useTranslation();
 
-  const firstscreenRender = () => {
-    let fsName = 'firstscreen-common fs-common-' + page;
-    return (
-      <div className={fsName}>
-        <div className='mask'>
-          <div className='text-container'>
-            <Routes>
-              <Route exact path={`/smartphone`} element={
-                <>
-                  <div className='cool-fs-title'>
-                    <Link to={`/`}>
-                      <div className='catalog-back-trigger common-back'>
-                        <img src={arrow} alt=''/>
-                      </div>
-                    </Link>
-                    {t(`Smartphone.Title`)}
-                  </div>
-                </>
-              } />
-            </Routes>
-          </div>
-        </div>
-        <div className='fader-common'></div>
-      </div>
-    );
-  };
-
   return (
     <div className='smartphones='>
       <PopUpForm service_name={state.service_name}/>
       <div className='blur'>
-        {firstscreenRender()}
+        <FirstScreenRenderer page={page} title={backArrowTitle} />
         <div className='main-wrapper'>
           <Fragment>
             {state.loaded ? (

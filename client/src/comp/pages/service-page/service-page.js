@@ -2,9 +2,10 @@ import React, { Fragment, useState, useEffect } from 'react';
 import arrow from './img/arrow.svg';
 import axios from 'axios';
 import $ from 'jquery';
-import { Link, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import PopUpForm from '../../pop-up-form/pop-up-form';
+import FirstScreenRenderer from "../../elements/first-screen-renderer";
 
 const ServicePage = (props) => {
   const [state, setState] = useState({
@@ -14,6 +15,7 @@ const ServicePage = (props) => {
   });
   const { t } = useTranslation();
   const page = props.match.params.name;
+  const backArrowTitle = 'ServicePage.Title';
 
   const popUpHandle = (name) => {
     $('.blur').addClass('active');
@@ -21,19 +23,19 @@ const ServicePage = (props) => {
     setState({ ...state, service_name: name });
   };
 
-  const renderList = (data) => {
-    console.log(data);
-    // return props.list.map((item, index) => {
-    //   return <li key={index}>{item}</li>;
-    // });
-  };
-
-  const renderDescList = (data) => {
-    console.log(data);
-    // return props.descList.map((item, index) => {
-    //   return <li key={index}>{item}</li>;
-    // });
-  };
+  // const renderList = (data) => {
+  //   console.log(data);
+  //   // return props.list.map((item, index) => {
+  //   //   return <li key={index}>{item}</li>;
+  //   // });
+  // };
+  //
+  // const renderDescList = (data) => {
+  //   console.log(data);
+  //   // return props.descList.map((item, index) => {
+  //   //   return <li key={index}>{item}</li>;
+  //   // });
+  // };
 
   useEffect(() => {
     getServicePage(props.match.params.id);
@@ -68,7 +70,7 @@ const ServicePage = (props) => {
         <div className='item-text-row'>
           <div className='item-text-row'>
             <Fragment>
-              {item.type == 'title' ? (
+              {item.type === 'title' ? (
                 <Fragment>
                   <div className='title-list'>{t(item.value)}</div>
                 </Fragment>
@@ -79,7 +81,7 @@ const ServicePage = (props) => {
           </div>
           <div className='item-text-row'>
             <Fragment>
-              {item.type == 'textarea' ? (
+              {item.type === 'textarea' ? (
                 <Fragment>
                   <div className='catalog-item-list'>
                     {renderTextArea(t(item.value))}
@@ -92,7 +94,7 @@ const ServicePage = (props) => {
           </div>
           <div className='item-text-row'>
             <Fragment>
-              {item.type == 'list' ? (
+              {item.type === 'list' ? (
                 <Fragment>
                   <div className='catalog-item-list'>
                     <li>{t(item.value)}</li>
@@ -105,7 +107,7 @@ const ServicePage = (props) => {
           </div>
           <div className='item-text-row'>
             <Fragment>
-              {item.type == 'desc-list' ? (
+              {item.type === 'desc-list' ? (
                 <Fragment></Fragment>
               ) : (
                 <Fragment>
@@ -121,31 +123,11 @@ const ServicePage = (props) => {
     });
   };
 
-  const firstscreenRender = () => {
-    let fsName = 'firstscreen-common fs-common-' + page;
-    return (
-      <div className={fsName}>
-        <div className='mask'>
-          <div className='text-container'>
-            <Routes>
-              <Route path={`/${page}`} element={
-                <>
-                  <div className='cool-fs-title'></div>
-                </>
-              } />
-            </Routes>
-          </div>
-        </div>
-        <div className='fader-common'></div>
-      </div>
-    );
-  };
-
   const renderImg = () => {
     return state.data.content.map((item, index) => {
       return (
         <Fragment>
-          {item.type == 'img' ? (
+          {item.type === 'img' ? (
             <Fragment>
               <img src={`/${item.value}`} alt='' />
             </Fragment>
@@ -160,7 +142,7 @@ const ServicePage = (props) => {
   return (
     <div className='service-page'>
       <PopUpForm service_name={state.service_name} />
-      {firstscreenRender()}
+      <FirstScreenRenderer page={page} title={backArrowTitle} />
       <div className='main-wrapper service-page'>
         <div className='catalog-item-component'>
           <Fragment>

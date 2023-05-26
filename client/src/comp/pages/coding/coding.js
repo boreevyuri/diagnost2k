@@ -1,11 +1,10 @@
 import React, {Fragment, useState, useEffect} from 'react';
-import {Route, Routes} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 import Footer from '../../footer/footer';
 import PopUpForm from '../../pop-up-form/pop-up-form';
-import arrow from './img/arrow.svg';
+import FirstScreenRenderer from "../../elements/first-screen-renderer";
 
 const Coding = () => {
   const [state, setState] = useState({
@@ -13,9 +12,10 @@ const Coding = () => {
     loaded: false,
   });
 
-  const {i18n, t} = useTranslation();
+  const {t} = useTranslation();
 
   const page = 'coding';
+  const backArrowTitle = 'Coding.Title';
 
   useEffect(() => {
     const getContent = async (category) => {
@@ -51,43 +51,15 @@ const Coding = () => {
     });
   };
 
-  const setDataFromProps = (service_name) => {
-    setState({...state, service_name: service_name});
-  };
-
-  const firstscreenRender = () => {
-    let fsName = 'firstscreen-common fs-common-' + page;
-    return (
-      <div className={fsName}>
-        <div className='mask'>
-          <div className='text-container'>
-            <Routes>
-              <Route exact path={`/${page}`} element={
-                <>
-                  <div className='cool-fs-title'>
-                    <Link to={`/`}>
-                      <div className='catalog-back-trigger common-back'>
-                        <img src={arrow} alt=''/>
-                      </div>
-                    </Link>
-                    {t(`Coding.Title`)}
-                  </div>
-                </>
-              } />
-            </Routes>
-          </div>
-        </div>
-        <div className='fader-common'></div>
-      </div>
-    )
-      ;
-  };
+  // const setDataFromProps = (service_name) => {
+  //   setState({...state, service_name: service_name});
+  // };
 
   return (
     <div className='coding'>
       <PopUpForm service_name={state.service_name}/>
       <div className='blur'>
-        {firstscreenRender()}
+        <FirstScreenRenderer page={page} title={backArrowTitle} />
         <div className='main-wrapper'>
           <section>
             <Fragment>

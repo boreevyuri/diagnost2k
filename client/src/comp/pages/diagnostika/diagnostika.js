@@ -1,20 +1,19 @@
 import React from 'react';
 import Footer from '../../footer/footer';
 import { useTranslation } from 'react-i18next';
+import FirstScreenRenderer from "../../elements/first-screen-renderer";
 
 const Diagnostika = () => {
-  const { t, i18n } = useTranslation();
+  const { t} = useTranslation();
+
+  const page = '1';
+  const backArrowTitle = 'Diagnostik.Firstscreen.Title'
 
   return (
     <div className='diagnostika'>
-      <div className='firstscreen-common fs-common-1 fs-notcommon'>
-        <div className='mask'>
-          <div className='text-container'>
-            <div className='fs-title'>{t('Diagnostik.Firstscreen.Title')}</div>
-          </div>
-        </div>
-        <div className='fader-common'></div>
-      </div>
+      <FirstScreenRenderer page={page} title={backArrowTitle} />
+      {/*<div className='firstscreen-common fs-common-1 fs-notcommon'>*/}
+      {/*</div>*/}
       <div className='main-wrapper'>
         <div className='about'>
           <div className='two-row about-row'>

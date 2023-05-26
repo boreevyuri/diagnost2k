@@ -1,7 +1,6 @@
 import React, {useState, Fragment} from 'react';
 import Footer from '../../footer/footer';
 import {useTranslation} from 'react-i18next';
-import $ from 'jquery';
 import {Route, Routes, Navigate} from 'react-router-dom';
 import TuningPage from './pages/tuning-page';
 import CatalogItem from './pages/catalog-item.js';
@@ -10,6 +9,8 @@ import Gearbox from './pages/gearbox-page.js';
 import nav1 from './img/catalog-item-1.jpg';
 import nav2 from './img/catalog-item-2.jpg';
 import nav3 from './img/catalog-item-3.jpg';
+import FirstScreenRenderer from "../../elements/first-screen-renderer";
+// import $ from 'jquery';
 
 const Tuning = () => {
   const [state, setState] = useState({
@@ -21,22 +22,25 @@ const Tuning = () => {
     setState({...state, service_name: service_name});
   };
 
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
 
-  const carHandle = (num) => {
-    $('.price-content-item').removeClass('active');
-    $('.car-type-item').removeClass('act');
-    $('.pci-' + num).addClass('active');
-    $('.cti-' + num).addClass('act');
-  };
+  const page = '2';
+  const backArrowTitle = 'Tuning.Firstscreen.Title';
+
+  // const carHandle = (num) => {
+  //   $('.price-content-item').removeClass('active');
+  //   $('.car-type-item').removeClass('act');
+  //   $('.pci-' + num).addClass('active');
+  //   $('.cti-' + num).addClass('act');
+  // };
   const redirect = async (link) => {
     console.log(link);
     setState({...state, redirect: link});
   };
-  const handleClose = (e) => {
-    $('.pop-up-container').removeClass('active');
-    $('body').removeClass('no-scroll');
-  };
+  // const handleClose = (e) => {
+  //   $('.pop-up-container').removeClass('active');
+  //   $('body').removeClass('no-scroll');
+  // };
 
   return (
     <div className='tuning'>
@@ -53,22 +57,15 @@ const Tuning = () => {
       }
       <PopUpForm service_name={state.service_name}/>
       <div className='blur'>
-        <div className='firstscreen-common fs-common-2'>
-          <div className='mask'>
-            <div className='text-container'>
-              <div className='fs-title'>{t('Tuning.Firstscreen.Title')}</div>
-            </div>
-          </div>
-          <div className='fader-common'></div>
-        </div>
+        <FirstScreenRenderer page={page} title={backArrowTitle} />
         <div className='main-wrapper'>
           <section>
             <Routes>
-              <Route exact path='/tuning' element={
+              <Route path='/' element={
                 <TuningPage redirect={(link) => redirect(link)}/>
               }/>
-              <Route path='/tuning/gearbox' element={<Gearbox/>}/>
-              <Route path='/tuning/turbo-boost' element={
+              <Route path='/gearbox' element={<Gearbox/>}/>
+              <Route path='/turbo-boost' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav1}
@@ -76,7 +73,7 @@ const Tuning = () => {
                   features={t('Tuning.CatalogItem.1.Features')}
                 />
               }/>
-              <Route exact path='/tuning' element={
+              <Route path='/' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav1}
@@ -84,7 +81,7 @@ const Tuning = () => {
                   features={t('Tuning.CatalogItem.1.Features')}
                 />
               }/>
-              <Route path='/tuning/atmospher-engine-boost' element={
+              <Route path='/atmospher-engine-boost' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav2}
@@ -92,7 +89,7 @@ const Tuning = () => {
                   features={t('Tuning.CatalogItem.2.Features')}
                 />
               }/>
-              <Route path='/tuning/diesel-engine-boost' element={
+              <Route path='/diesel-engine-boost' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav3}

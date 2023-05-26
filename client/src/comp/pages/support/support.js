@@ -1,12 +1,9 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import PopUpForm from '../../pop-up-form/pop-up-form';
-import { Route, Routes, Link } from 'react-router-dom';
 import $ from 'jquery';
-import arrow from './img/arrow.svg';
+import FirstScreenRenderer from "../../elements/first-screen-renderer";
 
 const Support = () => {
-  const { t } = useTranslation();
 
   const popUpHandle = () => {
     $('.blur').addClass('active');
@@ -14,39 +11,13 @@ const Support = () => {
   };
 
   const page = 'support';
-
-  const firstscreenRender = () => {
-    let fsName = 'firstscreen-common fs-common-' + page;
-    return (
-      <div className={fsName}>
-        <div className='mask'>
-          <div className='text-container'>
-            <Routes>
-              <Route path={`/support`} element={
-                <>
-                  <div className='cool-fs-title'>
-                    <Link to={`/`}>
-                      <div className='catalog-back-trigger common-back'>
-                        <img src={arrow} alt='' />
-                      </div>
-                    </Link>
-                    {t(`Navbar.3`)}
-                  </div>
-                </>
-              } />
-            </Routes>
-          </div>
-        </div>
-        <div className='fader-common'></div>
-      </div>
-    );
-  };
+  const backArrowTitle = 'Navbar.3';
 
   return (
     <div className='support'>
       <PopUpForm />
       <div className='blur'>
-        {firstscreenRender()}
+        <FirstScreenRenderer page={page} title={backArrowTitle} />
         <div className='main-wrapper'>
           <div onClick={() => popUpHandle()} className='btn-pop-up-form'>
             Click for support

@@ -3,7 +3,6 @@ import Footer from '../../footer/footer';
 import { Route, Routes } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
-import arrow from './img/arrow.svg';
 import { Link } from 'react-router-dom';
 import Catalog from './pages/catalog.js';
 import CatalogItem from './pages/catalog-item.js';
@@ -11,6 +10,7 @@ import PopUpForm from '../../pop-up-form/pop-up-form';
 import nav1 from './img/catalog-item-1.jpg';
 import nav2 from './img/catalog-item-2.jpg';
 import nav3 from './img/catalog-item-3.jpg';
+import FirstScreenRenderer from "../../elements/first-screen-renderer";
 
 const Display = () => {
   const [state, setState] = useState({
@@ -23,15 +23,16 @@ const Display = () => {
   };
 
   const page = 'display';
+  const backArrowTitle = 'Displays.Title';
 
   useEffect(() => {
+    const getContent = async (category) => {
+      let res = await axios.get(`/api/content/${category}`);
+      setState({ ...state, data: res.data, loaded: true });
+    };
     getContent(page);
-  }, []);
+  }, [state]);
 
-  const getContent = async (category) => {
-    let res = await axios.get(`/api/content/${category}`);
-    setState({ ...state, data: res.data, loaded: true });
-  };
 
   const renderContent = () => {
     return state.data.map((item, index) => {
@@ -60,38 +61,11 @@ const Display = () => {
 
   const { t } = useTranslation();
 
-  const firstscreenRender = () => {
-    let fsName = 'firstscreen-common fs-common-' + page;
-    return (
-      <div className={fsName}>
-        <div className='mask'>
-          <div className='text-container'>
-            <Routes>
-              <Route exact path={`/displays`} element={
-                <>
-                  <div className='cool-fs-title'>
-                    <Link to={`/`}>
-                      <div className='catalog-back-trigger common-back'>
-                        <img src={arrow} alt='' />
-                      </div>
-                    </Link>
-                    {t(`Displays.Title`)}
-                  </div>
-                </>
-              } />
-            </Routes>
-          </div>
-        </div>
-        <div className='fader-common'></div>
-      </div>
-    );
-  };
-
   return (
     <div className='displays'>
       <PopUpForm service_name={state.service_name} />
       <div className='blur'>
-        {firstscreenRender()}
+        <FirstScreenRenderer page={page} title={backArrowTitle} />
         <div className='main-wrapper'>
           <Fragment>
             {state.loaded ? (

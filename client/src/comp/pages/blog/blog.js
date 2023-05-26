@@ -1,11 +1,9 @@
 import React, { useState, Fragment, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Route, Routes, Link } from 'react-router-dom';
-import arrow from './img/arrow.svg';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
+import FirstScreenRenderer from "../../elements/first-screen-renderer";
 
 const Blog = () => {
-  const { t } = useTranslation();
 
   const [state, setState] = useState({
     posts: [],
@@ -13,21 +11,22 @@ const Blog = () => {
   });
 
   const page = 'blog';
+  const backArrowTitle = 'Navbar.2'
 
-  const getPosts = async () => {
-    let res = await axios.get(`/posts`);
-    if (res.data.length > 0) {
-      setState({
-        ...state,
-        posts: res.data,
-        loaded: true,
-      });
-    }
-  };
 
   useEffect(() => {
+    const getPosts = async () => {
+      let res = await axios.get(`/posts`);
+      if (res.data.length > 0) {
+        setState({
+          ...state,
+          posts: res.data,
+          loaded: true,
+        });
+      }
+    };
     getPosts();
-  }, [getPosts]);
+  }, []);
 
   const renderPosts = () => {
 
@@ -53,37 +52,9 @@ const Blog = () => {
     });
   };
 
-
-  const firstscreenRender = () => {
-    let fsName = 'firstscreen-common fs-common-' + page;
-    return (
-      <div className={fsName}>
-        <div className='mask'>
-          <div className='text-container'>
-            <Routes>
-              <Route exact path={`/blog`} element={
-                <>
-                  <div className='cool-fs-title'>
-                    <Link to={`/`}>
-                      <div className='catalog-back-trigger common-back'>
-                        <img src={arrow} alt='' />
-                      </div>
-                    </Link>
-                    {t(`Navbar.2`)}
-                  </div>
-                </>
-              } />
-            </Routes>
-          </div>
-        </div>
-        <div className='fader-common'></div>
-      </div>
-    );
-  };
-
   return (
     <div className='blog'>
-      {firstscreenRender()}
+      <FirstScreenRenderer page={page} title={backArrowTitle} />
       <div className='main-wrapper'>
         <div className='blog-container'>
           <Fragment>
