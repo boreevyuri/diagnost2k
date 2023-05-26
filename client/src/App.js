@@ -27,6 +27,7 @@ import Post from './comp/pages/blog/comp/post';
 import Others from './comp/pages/others/others';
 import CatalogItemPage from './comp/pages/others/pages/catalog-item-page.js';
 import ServicePage from './comp/pages/service-page/service-page.js';
+import Admin from "./comp/admin/admin";
 // import ScrollToTop from 'react-router-scroll-top';
 // import './styles/style.css';
 
@@ -72,6 +73,7 @@ const App = () => {
                             <Route path='blog/*' element={<Blog/>}/>
                             <Route path='post/:id' element={<Post/>}/>
                             <Route path='service/:id' element={<CatalogItemPage/>}/>
+                            <Route path='admin/*' element={<Admin/>} />
                         </Route>
                     </Routes>
                 </section>
