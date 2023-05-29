@@ -76,8 +76,8 @@ const Display = () => {
           </Fragment>
           <section>
             <Routes>
-              <Route exact path='/displays' component={Catalog} />
-              <Route path='/displays/6wa-hybrid' element={
+              <Route path='/' element={<Catalog />} />
+              <Route path='/6wa-hybrid' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav1}
@@ -86,7 +86,7 @@ const Display = () => {
                   description={t('Displays.CatalogItem.1.Description')}
                 />
               } />
-              <Route path='/displays/6wb-digital' element={
+              <Route path='/6wb-digital' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav2}
@@ -95,7 +95,7 @@ const Display = () => {
                   description={t('Displays.CatalogItem.2.Description')}
                 />
               } />
-              <Route path='/displays/vividscreen-idrive' element={
+              <Route path='/vividscreen-idrive' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav3}

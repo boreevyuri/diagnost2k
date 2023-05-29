@@ -108,32 +108,32 @@ const Navigation = () => {
                   description={t('Navigation.CatalogItem.3.Description')}
                 />
               } />
-            <Route path='/speed-limit' element={
-              <CatalogItem
-                setData={setDataFromProps}
-                img={nav4}
-                title={t('Navigation.CatalogItem.4.Title')}
-                features={t('Navigation.CatalogItem.4.Features')}
-                description={t('Navigation.CatalogItem.4.Description')}
-              />
-            } />
-            <Route path='/nbt-evo-id4' element={
-              <CatalogItem
-                setData={setDataFromProps}
-                img={nav5}
-                title={t('Navigation.CatalogItem.5.Title')}
-                features={t('Navigation.CatalogItem.5.Features')}
-                description={t('Navigation.CatalogItem.5.Description')}
-              />
-            } />
-            <Route path='/idrive-touch-controller' element={
-              <CatalogItem
-                setData={setDataFromProps}
-                img={nav6}
-                title={t('Navigation.CatalogItem.6.Title')}
-                features={t('Navigation.CatalogItem.6.Features')}
-                description={t('Navigation.CatalogItem.6.Description')}
-              />
+              <Route path='/speed-limit' element={
+                <CatalogItem
+                  setData={setDataFromProps}
+                  img={nav4}
+                  title={t('Navigation.CatalogItem.4.Title')}
+                  features={t('Navigation.CatalogItem.4.Features')}
+                  description={t('Navigation.CatalogItem.4.Description')}
+                />
+              } />
+              <Route path='/nbt-evo-id4' element={
+                <CatalogItem
+                  setData={setDataFromProps}
+                  img={nav5}
+                  title={t('Navigation.CatalogItem.5.Title')}
+                  features={t('Navigation.CatalogItem.5.Features')}
+                  description={t('Navigation.CatalogItem.5.Description')}
+                />
+              } />
+              <Route path='/idrive-touch-controller' element={
+                <CatalogItem
+                  setData={setDataFromProps}
+                  img={nav6}
+                  title={t('Navigation.CatalogItem.6.Title')}
+                  features={t('Navigation.CatalogItem.6.Features')}
+                  description={t('Navigation.CatalogItem.6.Description')}
+                />
             } />
           </Routes>
         </section>

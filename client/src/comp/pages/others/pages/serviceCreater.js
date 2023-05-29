@@ -29,15 +29,15 @@ const ServiceCreater = () => {
     try {
       let obj = {};
       let content = state.content;
-      if (input == 1) {
+      if (input === 1) {
         obj.type = 'title';
         obj.value = '';
       }
-      if (input == 2) {
+      if (input === 2) {
         obj.type = 'textarea';
         obj.value = '';
       }
-      if (input == 3) {
+      if (input === 3) {
         obj.type = 'list';
         obj.value = '';
       }
@@ -89,7 +89,7 @@ const ServiceCreater = () => {
       return (
         <div key={index}>
           <Fragment>
-            {item.type == 'title' ? (
+            {item.type === 'title' ? (
               <Fragment>
                 <div className='creator-input-container'>
                   <input
@@ -111,7 +111,7 @@ const ServiceCreater = () => {
             )}
           </Fragment>
           <Fragment>
-            {item.type == 'textarea' ? (
+            {item.type === 'textarea' ? (
               <Fragment>
                 <div className='creator-input-container'>
                   <textarea
@@ -136,7 +136,7 @@ const ServiceCreater = () => {
             )}
           </Fragment>
           <Fragment>
-            {item.type == 'list' ? (
+            {item.type === 'list' ? (
               <Fragment>
                 <div className='creator-input-container'>
                   <li>

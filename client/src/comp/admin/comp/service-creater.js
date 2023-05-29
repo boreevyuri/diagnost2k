@@ -27,7 +27,7 @@ const ServiceCreater = (props) => {
         `/api/content/${props.match.params.focus}`,
         body
       );
-      if (res.data == 'OK') setState({ ...state, redirect: true });
+      if (res.data === 'OK') setState({ ...state, redirect: true });
     } else {
       $('.input-alert').fadeIn(100);
       setTimeout(() => {
@@ -106,19 +106,19 @@ const ServiceCreater = (props) => {
     try {
       let obj = {};
       let content = state[state.lang];
-      if (input == 1) {
+      if (input === 1) {
         obj.type = 'title';
         obj.value = '';
       }
-      if (input == 2) {
+      if (input === 2) {
         obj.type = 'textarea';
         obj.value = '';
       }
-      if (input == 3) {
+      if (input === 3) {
         obj.type = 'list';
         obj.value = '';
       }
-      if (input == 4) {
+      if (input === 4) {
         obj.type = 'img';
         obj.value = '';
       }
@@ -202,7 +202,7 @@ const ServiceCreater = (props) => {
         return (
           <div key={index}>
             <Fragment>
-              {item.type == 'title' ? (
+              {item.type === 'title' ? (
                 <Fragment>
                   <div className='creator-input-container'>
                     <input
@@ -224,7 +224,7 @@ const ServiceCreater = (props) => {
               )}
             </Fragment>
             <Fragment>
-              {item.type == 'img' ? (
+              {item.type === 'img' ? (
                 <Fragment>
                   <div className='creator-input-container'>
                     <img id={`img${index}`} alt='' />
@@ -248,7 +248,7 @@ const ServiceCreater = (props) => {
               )}
             </Fragment>
             <Fragment>
-              {item.type == 'textarea' ? (
+              {item.type === 'textarea' ? (
                 <Fragment>
                   <div className='creator-input-container'>
                     <textarea
@@ -273,7 +273,7 @@ const ServiceCreater = (props) => {
               )}
             </Fragment>
             <Fragment>
-              {item.type == 'list' ? (
+              {item.type === 'list' ? (
                 <Fragment>
                   <div className='creator-input-container'>
                     <li>

@@ -30,7 +30,7 @@ const NavBar = (props) => {
       <div className='wrapper'>
         <div className='logo box-hover'>
           <Link to='/'>
-            <img src={logo} />
+            <img src={logo} alt=''/>
           </Link>
         </div>
         <div className='navbar-contacts'>

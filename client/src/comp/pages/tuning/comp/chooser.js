@@ -52,7 +52,7 @@ const Chooser = (props) => {
   };
 
   const handleSend = () => {
-    if (state.engine == '' || state.model == '' || state.mark == '') {
+    if (state.engine === '' || state.model === '' || state.mark === '') {
       $('.chooser-error-alert').fadeIn(300);
       setTimeout(() => {
         $('.chooser-error-alert').fadeOut(300);
@@ -60,7 +60,7 @@ const Chooser = (props) => {
       return;
     }
     let link = `/carpage/${state.mark}/${state.model}${state.engine}`;
-    link = link.toLowerCase(link);
+    link = link.toLowerCase();
     console.log(link);
     props.redirect(link);
   };
@@ -130,6 +130,7 @@ const Chooser = (props) => {
             <option value='ssangyong'>Ssangyong</option>
             <option value='subaru'>Subaru</option>
             <option value='suzuki'>Suzuki</option>
+            <option value='toyota'>Toyota</option>
             <option value='vinfast'>Vinfast</option>
             <option value='volvo'>Volvo</option>
           </select>

@@ -82,8 +82,8 @@ const Smartphone = () => {
           </Fragment>
           <section>
             <Routes>
-              <Route exact path='/smartphone' element={<Catalog />}/>
-              <Route path='/smartphone/carplay' element={
+              <Route exact path='/' element={<Catalog />}/>
+              <Route path='/carplay' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav1}
@@ -92,7 +92,7 @@ const Smartphone = () => {
                   description={t('Smartphone.CatalogItem.1.Description')}
                 />
               } />
-              <Route path='/smartphone/smartview-flex' element={
+              <Route path='/smartview-flex' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav2}
@@ -101,7 +101,7 @@ const Smartphone = () => {
                   description={t('Smartphone.CatalogItem.2.Description')}
                 />
               } />
-              <Route path='/smartphone/smartview-apple-tv4' element={
+              <Route path='/smartview-apple-tv4' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav3}
@@ -110,7 +110,7 @@ const Smartphone = () => {
                   description={t('Smartphone.CatalogItem.3.Description')}
                 />
               } />
-              <Route path='/smartphone/smartview-apple-tv3' element={
+              <Route path='/smartview-apple-tv3' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav4}
@@ -119,7 +119,7 @@ const Smartphone = () => {
                   description={t('Smartphone.CatalogItem.4.Description')}
                 />
               } />
-              <Route path='/smartphone/android-auto' element={
+              <Route path='/android-auto' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav5}
@@ -128,7 +128,7 @@ const Smartphone = () => {
                   description={t('Smartphone.CatalogItem.5.Description')}
                 />
               } />
-              <Route path='/Smartphone/carplay-apple' element={
+              <Route path='/carplay-apple' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav6}
@@ -137,7 +137,7 @@ const Smartphone = () => {
                   description={t('Smartphone.CatalogItem.6.Description')}
                 />
               } />
-              <Route path='/Smartphone/bmw-bluetooth' element={
+              <Route path='/bmw-bluetooth' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav7}
@@ -146,7 +146,7 @@ const Smartphone = () => {
                   description={t('Smartphone.CatalogItem.7.Description')}
                 />
               } />
-              <Route path='/Smartphone/aux-port' element={
+              <Route path='/aux-port' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav8}
@@ -155,7 +155,7 @@ const Smartphone = () => {
                   description={t('Smartphone.CatalogItem.8.Description')}
                 />
               } />
-              <Route path='/Smartphone/alpha-one' element={
+              <Route path='/alpha-one' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav9}

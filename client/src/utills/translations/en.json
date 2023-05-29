@@ -4,24 +4,24 @@
     "1": "Multimedia",
     "2": "Navigation",
     "3": "Displays",
-    "4": "Diagnostiks",
+    "4": "Diagnostic",
     "5": "Parking",
     "6": "Chip tuning",
     "7": "Auto pick",
     "8": "Others",
     "9": "Coding",
-    "10": "File service"
+    "10": "Parts Е61 300D"
   },
   "ContactsPage": {
     "1": { "1": "Russian federation", "2": "Petersburg" },
-    "2": { "1": "Russian federation", "2": "Moscow" },
+    "2": { "1": "Russian federation", "2": "Belgorod" },
     "3": { "1": "United States of America", "2": "California" }
   },
   "Contacts": {
     "Phone": "+7 (921) 423 21-71",
     "Email": "info@diagnost2k.bizml.ru"
   },
-  "Footer": { "FormTitle": "White us" },
+  "Footer": { "FormTitle": "Write us" },
   "Form": {
     "Choose": "Select communication method",
     "Name": "Name",
@@ -38,7 +38,7 @@
     "Firstscreen": {
       "1": { "Title": "diagnostick", "Subtitle": "", "Text": "" },
       "2": { "Title": "Chip tuning", "Subtitle": "", "Text": "" },
-      "3": { "Title": "File service", "Subtitle": "", "Text": "" },
+      "3": { "Title": "Parts Е61 300D", "Subtitle": "", "Text": "" },
       "Button": "More"
     }
   },
@@ -103,7 +103,7 @@
     "ButtonRequest": "Request",
     "CatalogItem": {
       "1": {
-        "Title": "BMW Navigation Map Update 2019/2020",
+        "Title": "BMW Navigation Map Update 2020/2021",
         "Features": "Keep your maps updated without leaving Take charge of your time and find routes through new, more convenient roads and expresswaysKnow exactly where the next gas station, ATM or restaurant isSave fuel by choosing the most efficient ways to get to your destination",
         "Description": "The list of available maps and regions for each BMW may be different. Identify your car to find out to which countries the BMW iDrive map update for your specific car extends to and which year/quarter is covered."
       },

@@ -15,23 +15,21 @@ const Post = (props) => {
     loaded: false,
   });
 
-
-  const getPost = async () => {
-    let res = await axios.get(`/posts?slug=${props.match.params.id}`);
-    let data = res.data[0];
-    console.log(data);
-    setState({
-      ...state,
-      title: data.Name,
-      preview: data.Preview,
-      content: data.Content,
-      loaded: true,
-    });
-  };
-
   useEffect(() => {
+    const getPost = async () => {
+      let res = await axios.get(`/posts?slug=${props.match.params.id}`);
+      let data = res.data[0];
+      console.log(data);
+      setState({
+        ...state,
+        title: data.Name,
+        preview: data.Preview,
+        content: data.Content,
+        loaded: true,
+      });
+    };
     getPost();
-  }, [getPost]);
+  }, []);
 
   return (
     <div className='blog-page'>

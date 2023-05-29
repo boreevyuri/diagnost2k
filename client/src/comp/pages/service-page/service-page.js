@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import PopUpForm from '../../pop-up-form/pop-up-form';
 import FirstScreenRenderer from "../../elements/first-screen-renderer";
+import Footer from "../../footer/footer";
 
 const ServicePage = (props) => {
   const [state, setState] = useState({
@@ -38,18 +39,17 @@ const ServicePage = (props) => {
   // };
 
   useEffect(() => {
+    const getServicePage = async (id) => {
+      let res = await axios.get(`/api/content/edit/${id}`);
+      setState({
+        ...state,
+        data: res.data[0],
+        loaded: true,
+        title: res.data[0].content[0].value,
+      });
+    };
     getServicePage(props.match.params.id);
-  }, []);
-
-  const getServicePage = async (id) => {
-    let res = await axios.get(`/api/content/edit/${id}`);
-    setState({
-      ...state,
-      data: res.data[0],
-      loaded: true,
-      title: res.data[0].content[0].value,
-    });
-  };
+  }, [state, props.match.params.id]);
 
   const renderTextArea = (content) => {
     if (content.length > 1000) {
@@ -193,6 +193,7 @@ const ServicePage = (props) => {
           </Fragment>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

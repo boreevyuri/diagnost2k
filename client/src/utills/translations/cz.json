@@ -18,7 +18,7 @@
   },
   "ContactsPage": {
     "1": { "1": "Ruská federace", "2": "Petrohrad" },
-    "2": { "1": "Ruská federace", "2": "Moskva" },
+    "2": { "1": "Ruská federace", "2": "Belgorod" },
     "3": { "1": "Spojené státy americké", "2": "Kalifornie" }
   },
   "Footer": { "FormTitle": "Napište nám" },
@@ -38,7 +38,7 @@
     "Firstscreen": {
       "1": { "Title": "Diagnostika", "Subtitle": "", "Text": "" },
       "2": { "Title": "Chip tuning", "Subtitle": "", "Text": "" },
-      "3": { "Title": "File service", "Subtitle": "", "Text": "" },
+      "3": { "Title": "NÁHRADNÍ DÍLY Е61 300D", "Subtitle": "", "Text": "" },
       "Button": "Více"
     }
   },
@@ -103,7 +103,7 @@
     "ButtonRequest": "Objednat",
     "CatalogItem": {
       "1": {
-        "Title": "BMW navigační aktualizace 2019/2020",
+        "Title": "BMW navigační aktualizace 2020/2021",
         "Features": "Mějte své karty v aktuálním stavu, aniž by se z domu vezměte zodpovědnost za svůj čas a najít trasy na nový, pohodlnější dálnic a vysokorychlostních silnicích, přesně věděli, kde se nachází další čerpací stanice, bankomat nebo restauraci, chcete-li ušetřit palivo, výběrem z nejvíce účinné způsoby, jak se dostat do místa určení",
         "Description": "seznam dostupných map a oblastí pro každé BMW může být jiný. Určete své vozidlo, abyste zjistili, do kterých zemí se rozšiřuje aktualizace karty BMW iDrive pro vaše konkrétní vozidlo a jaký rok / čtvrtletí se vztahuje."
       },

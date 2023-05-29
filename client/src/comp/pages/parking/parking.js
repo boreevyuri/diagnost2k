@@ -82,8 +82,8 @@ const Parking = () => {
           </Fragment>
           <section>
             <Routes>
-              <Route exact path='/parking' element={<Catalog/>}/>
-              <Route path='/parking/nav-update2020' element={
+              <Route exact path='/' element={<Catalog/>}/>
+              <Route path='/nav-update2020' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav1}
@@ -92,7 +92,7 @@ const Parking = () => {
                   description={t('Parking.CatalogItem.1.Description')}
                 />
               } />
-              <Route path='/parking/nbt-evo-id5-id6' element={
+              <Route path='/nbt-evo-id5-id6' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav2}
@@ -101,7 +101,7 @@ const Parking = () => {
                   description={t('Parking.CatalogItem.2.Description')}
                 />
               } />
-              <Route path='/parking/cic-nav-system' element={
+              <Route path='/cic-nav-system' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav3}
@@ -110,7 +110,7 @@ const Parking = () => {
                   description={t('Parking.CatalogItem.3.Description')}
                 />
               } />
-              <Route path='/parking/speed-limit' element={
+              <Route path='/speed-limit' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav4}
@@ -119,7 +119,7 @@ const Parking = () => {
                   description={t('Parking.CatalogItem.4.Description')}
                 />
               } />
-              <Route path='/parking/nbt-evo-id4' element={
+              <Route path='/nbt-evo-id4' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav5}
@@ -128,7 +128,7 @@ const Parking = () => {
                   description={t('Parking.CatalogItem.5.Description')}
                 />
               } />
-              <Route path='/parking/idrive-touch-controller' element={
+              <Route path='/idrive-touch-controller' element={
                 <CatalogItem
                   setData={setDataFromProps}
                   img={nav6}

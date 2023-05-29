@@ -8,7 +8,6 @@ import $ from 'jquery';
 const CarPage = (props) => {
   const {t, i18n} = useTranslation();
 
-
   const [state, setState] = useState({
     title: '',
     desc: '',
@@ -19,26 +18,25 @@ const CarPage = (props) => {
     numbers: [],
   });
 
-  const renderCar = async () => {
-    let res = await axios.get(
-      `/api/cars/${props.match.params.mark}/${props.match.params.id}`
-    );
-    setState({
-      ...state,
-      title: res.data.fullName,
-      desc: res.data.desc,
-      imgUrl: res.data.imgUrl,
-      loaded: true,
-      fullDesc: res.data.fullDesc,
-      chartTorque: res.data.chartTorque,
-      chartPower: res.data.chartPower,
-      numbers: res.data.numbers,
-    });
-  };
-
   useEffect(() => {
+    const renderCar = async () => {
+      let res = await axios.get(
+          `/api/cars/${props.match.params.mark}/${props.match.params.id}`
+      );
+      setState({
+        ...state,
+        title: res.data.fullName,
+        desc: res.data.desc,
+        imgUrl: res.data.imgUrl,
+        loaded: true,
+        fullDesc: res.data.fullDesc,
+        chartTorque: res.data.chartTorque,
+        chartPower: res.data.chartPower,
+        numbers: res.data.numbers,
+      });
+    };
     renderCar();
-  }, [renderCar]);
+  }, []);
 
   const numbers = () => {
     let titleIndex = 0;

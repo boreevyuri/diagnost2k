@@ -53,6 +53,7 @@ const Catalog = () => {
           />
         </Link>
       </div>
+      {/*TODO: Убрать этот хардкод*/}
       <div className='about'>
         <div className='two-row about-row'>
           Когда вы регулярно обновляете навигацию BMW, ваша карта показывает

@@ -11,10 +11,10 @@ const Socials = () => (
             href="https://t.me/dodon83"
             target="_blank"
         >
-            <img className="box-hover" src={telegram} />
+            <img className="box-hover" src={telegram} alt='telegram-icon'/>
         </a>
         <a href='https://instagram.com/diagnost2k.ru?igshid=YmMyMTA2M2Y' target='_blank'>
-            <img className='box-hover' src={instagram} />
+            <img className='box-hover' src={instagram} alt='instagram-icon'/>
         </a>
     </>
 )
